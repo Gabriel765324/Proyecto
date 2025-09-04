@@ -1,0 +1,120 @@
+*{
+    position: absolute;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 60px;
+}
+.Caja1{
+    width: 80vw;
+    height: 13.9vh;
+    background-color: rgba(146, 248, 44, 0.546);
+    margin-top: 140px;
+    margin-left: 9.52vw;
+}
+.Datos{
+    width: 6vw;
+    height: 3vh;
+    margin-top: 148px;
+    margin-left: 46.52vw;
+    background-color: cyan;
+}
+.Dato_nombre{
+    width: 60vw;
+    height: 3vh;
+    background-color: rgba(248, 207, 44, 0.546);
+    margin-top: 178px;
+    margin-left: 19.52vw;
+}
+.Dato_correo{
+    width: 60vw;
+    height: 3vh;
+    background-color: rgba(248, 207, 44, 0.546);
+    margin-top: 208px;
+    margin-left: 19.52vw;
+}
+.Caja2{
+    width: 80vw;
+    height: 55vh;
+    background-color: rgba(146, 248, 44, 0.546);
+    margin-top: 255px;
+    margin-left: 9.52vw;
+}
+.Modificar_datos{
+    width: 12vw;
+    height: 3vh;
+    margin-top: 263px;
+    margin-left: 43.52vw;
+    background-color: cyan;
+}
+.Nombre{
+    width: 16vw;
+    height: 3vh;
+    background-color: rgba(248, 207, 44, 0.546);
+    margin-top: 293px;
+    margin-left: 41.52vw;
+}
+.Dar_nombre{
+    width: 24vw;
+    height: 3vh;
+    margin-top: 323px;
+    margin-left: 37.52vw;
+}
+.Correo{
+    width: 16vw;
+    height: 3vh;
+    background-color: rgba(248, 207, 44, 0.546);
+    margin-top: 359px;
+    margin-left: 41.52vw;
+}
+.Dar_correo{
+    width: 24vw;
+    height: 3vh;
+    margin-top: 389px;
+    margin-left: 37.52vw;
+}
+.Contrase_a{
+    width: 16vw;
+    height: 3vh;
+    background-color: rgba(248, 207, 44, 0.546);
+    margin-top: 425px;
+    margin-left: 41.52vw;
+}
+.Dar_contrase_a{
+    width: 24vw;
+    height: 3vh;
+    margin-top: 455px;
+    margin-left: 37.52vw;
+}
+.Contrase_a2{
+    width: 16vw;
+    height: 3vh;
+    background-color: rgba(248, 207, 44, 0.546);
+    margin-top: 491px;
+    margin-left: 41.52vw;
+}
+.Dar_contrase_a2{
+    width: 24vw;
+    height: 3vh;
+    margin-top: 521px;
+    margin-left: 37.52vw;
+}
+.Antigua_contrase_a{
+    width: 16vw;
+    height: 3vh;
+    background-color: rgba(248, 207, 44, 0.546);
+    margin-top: 557px;
+    margin-left: 41.52vw;
+}
+.Dar_antigua_contrase_a{
+    width: 24vw;
+    height: 3vh;
+    margin-top: 587px;
+    margin-left: 37.52vw;
+}
+.Enviar{
+    width: 16vw;
+    height: 3vh;
+    margin-top: 623px;
+    margin-left: 41.52vw;
+    background-color: cyan;
+}

@@ -1,0 +1,63 @@
+.Recuadro{
+    margin-top: 20vh;
+    margin-left: 33vw;
+    height: 70vh;
+    width: 34vw;
+    background-color: rgba(0, 191, 255, 0.546);
+}
+.Preguntar_por_la_cuenta{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 76vh;
+    margin-left: 43.5vw;
+    width: 14vw;
+    height: 3vh;
+}
+.Enlace_para_el_registro{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 79vh;
+    margin-left: 43.5vw;
+    width: 14vw;
+    height: 3vh;
+}
+.Ingresar_correo{
+    margin-top: 28vh;
+    margin-left: 43.5vw;
+    height: 3vh;
+    width: 14vw;
+    background-color: chartreuse;
+}
+.Poner_aqu__el_correo{
+    margin-top: 31vh;
+    margin-left: 38vw;
+    height: 3vh;
+    width: 24vw;
+}
+.Ingresar_contrase_a{
+    margin-top: 46vh;
+    margin-left: 43.5vw;
+    height: 3vh;
+    width: 14vw;
+    background-color: chartreuse;
+}
+.Poner_aqu__la_contrase_a{
+    margin-top: 49vh;
+    margin-left: 38vw;
+    height: 3vh;
+    width: 24vw;
+}
+.Iniciar_sesi_n{
+    margin-top: 64vh;
+    margin-left: 45.375vw;
+    height: 3vh;
+    width: 10vw;
+    background-color: rgb(248, 178, 16);
+    border-radius: 22px 22px 22px 22px;
+}
+.Iniciar_sesi_n:hover{
+    margin-top: 64vh;
+    margin-left: 45.375vw;
+    height: 3vh;
+    width: 10vw;
+    background-color: rgb(255, 255, 0);
+    border-radius: 22px 22px 22px 22px;
+}

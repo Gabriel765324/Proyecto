@@ -1,0 +1,89 @@
+.Espacio_para_poner_el_nombre_creado{
+    margin-top: 29vh;
+    margin-left: 38vw;
+    height: 3vh;
+    width: 24vw;
+}
+.Texto_de_nombre_creado{
+    margin-top: 26vh;
+    margin-left: 43.5vw;
+    height: 3vh;
+    width: 14vw;
+    background-color: chartreuse;
+}
+.Texto_de_correo_creado{
+    margin-top: 38vh;
+    margin-left: 43.5vw;
+    height: 3vh;
+    width: 14vw;
+    background-color: chartreuse;
+}
+.Espacio_para_poner_el_correo_creado{
+    margin-top: 41vh;
+    margin-left: 38vw;
+    height: 3vh;
+    width: 24vw;
+}
+.Texto_de_contrase_a_creada{
+    margin-top: 50vh;
+    margin-left: 43.5vw;
+    height: 3vh;
+    width: 14vw;
+    background-color: chartreuse;
+}
+.Espacio_para_poner_la_contrase_a_creada{
+    margin-top: 53vh;
+    margin-left: 38vw;
+    height: 3vh;
+    width: 24vw;
+}
+.Texto_de_contrase_a_creada2{
+    margin-top: 62vh;
+    margin-left: 43.5vw;
+    height: 3vh;
+    width: 14vw;
+    background-color: chartreuse;
+}
+.Espacio_para_poner_la_contrase_a_creada2{
+    margin-top: 65vh;
+    margin-left: 38vw;
+    height: 3vh;
+    width: 24vw;
+}
+.Bot_n_para_crear_cuenta{
+    margin-top: 72.5vh;
+    margin-left: 45.375vw;
+    height: 3vh;
+    width: 10vw;
+    background-color: rgb(248, 178, 16);
+    border-radius: 22px 22px 22px 22px;
+}
+.Bot_n_para_crear_cuenta:hover{
+    margin-top: 72.5vh;
+    margin-left: 45.375vw;
+    height: 3vh;
+    width: 10vw;
+    background-color: rgb(255, 255, 0);
+    border-radius: 22px 22px 22px 22px;
+}
+.Recuadro{
+    margin-top: 20vh;
+    margin-left: 33vw;
+    height: 70vh;
+    width: 34vw;
+    background-color: rgba(0, 191, 255, 0.546);
+}
+.Preguntar_por_la_cuenta{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 79vh;
+    margin-left: 43.5vw;
+    width: 14vw;
+    height: 3vh;
+}
+.Enlace_de_inicio_de_sesi_n{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 82vh;
+    margin-left: 43.5vw;
+    width: 14vw;
+    height: 3vh;
+}
