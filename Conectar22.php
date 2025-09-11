@@ -1,3 +1,3 @@
 <?php
-    $Conectar = new mysqli("localhost", "root", "", "Proyecto");
+    $Conectar = new mysqli("localhost", "Usuario", "2222", "Proyecto");
 ?>

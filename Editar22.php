@@ -22,8 +22,10 @@
     }
     include("Conectar22.php");
     $Identificador = $_SESSION["ID"];
-    $Consulta = "SELECT * FROM Usuarios WHERE ID = $Identificador";
-    $Resultado = $Conectar -> query($Consulta);
+    $Consulta = $Conectar -> prepare("SELECT * FROM Usuarios WHERE ID = ?");
+    $Consulta -> bind_param("i", $Identificador);
+    $Consulta -> execute();
+    $Resultado = $Consulta -> get_result();
     $Bien = 0;
     while($Fila = $Resultado -> fetch_array()){
         $Encriptado = $Fila[3];
@@ -62,8 +64,10 @@
     $Nombre_nuevo = $_POST["Nombre"];
     $Contrase_a_nueva = password_hash($_POST["Contrase_a"], PASSWORD_DEFAULT);
     $Correo_nuevo = $_POST["Correo"];
-    $Consulta = "SELECT * FROM Usuarios WHERE Correo LIKE '$Correo_nuevo'";
-    $Resultado = $Conectar -> query($Consulta);
+    $Consulta = $Conectar -> prepare("SELECT * FROM Usuarios WHERE Correo LIKE ?");
+    $Consulta -> bind_param("s", $Correo_nuevo);
+    $Consulta -> execute();
+    $Resultado = $Consulta -> get_result();
     $Bien = 1;
     while($Fila = $Resultado -> fetch_array()){
         $Bien = 0;
@@ -78,8 +82,9 @@
         <?php
         exit;
     }
-    $Consulta = "UPDATE Usuarios SET Nombre = '$Nombre_nuevo', Contrase_a = '$Contrase_a_nueva', Correo = '$Correo_nuevo' WHERE ID = $Identificador";
-    $Conectar -> query($Consulta);
+    $Consulta = $Conectar -> prepare("UPDATE Usuarios SET Nombre = ?, Contrase_a = ?, Correo = ? WHERE ID = ?");
+    $Consulta -> bind_param("sssi", $Nombre_nuevo, $Contrase_a_nueva, $Correo_nuevo, $Identificador);
+    $Consulta -> execute();
     $_SESSION["Nombre"] = $Nombre_nuevo;
     $_SESSION["Correo"] = $Correo_nuevo;
     $_SESSION["Tiempo"] = time();

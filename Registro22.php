@@ -13,8 +13,10 @@
         <?php
         exit;
     }
-    $Consulta = "SELECT * FROM `Usuarios` WHERE `Correo` LIKE '$Correo'";
-    $Lista = $Conectar -> query($Consulta);
+    $Consulta = $Conectar -> prepare("SELECT * FROM `Usuarios` WHERE `Correo` LIKE ?");
+    $Consulta -> bind_param("s", $Correo);
+    $Consulta -> execute();
+    $Lista = $Consulta -> get_result();
     $Bien = 1;
     while($Datos = $Lista -> fetch_array()){
         $Bien = 0;
@@ -23,8 +25,9 @@
     if($Bien == 1){
         $Progreso = str_repeat("0", 222);
         $Contrase_a = password_hash($Contrase_a, PASSWORD_DEFAULT);
-        $Consulta = "INSERT INTO `Usuarios` (`Nombre`, `Correo`, `Contrase_a`, `Problemas`) VALUES ('$Nombre', '$Correo', '$Contrase_a', '$Progreso')";
-        $Conectar -> query($Consulta);
+        $Consulta = $Conectar -> prepare("INSERT INTO `Usuarios` (`Nombre`, `Correo`, `Contrase_a`, `Problemas`) VALUES (?, ?, ?, ?)");
+        $Consulta -> bind_param("ssss", $Nombre, $Correo, $Contrase_a, $Progreso);
+        $Consulta -> execute();
         ?>
         <script>
             alert("Se creó la cuenta.");
