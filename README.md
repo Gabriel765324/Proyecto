@@ -1,2 +1,2 @@
 # Proyecto
-Proyecto del cahillerato técnico humanístico.
+Proyecto del bachillerato técnico humanístico.
