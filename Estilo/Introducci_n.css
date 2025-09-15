@@ -1,29 +1,8 @@
 *{
     font-family: 'Courier New', Courier, monospace;
     color: black;
-    position: relative;
     text-align: justify;
     font-weight: 600;
-}
-body{
-    background-color: rgba(0, 255, 255, 0.124);
-    text-align: justify;
-}
-.Fondo{
-    position: absolute;
-    background-image: url("/Proyecto/Fotos/C++.png");
-    background-size: 44vw 100vh;
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
-    margin-top: 0px;
-    margin-left: 0px;
-    opacity: 0.4;
-    width: 98vw;
-    height: 100vh;
-}
-.Volver{
-    position: absolute;
-    color: rgb(0, 123, 255);
 }
 .Título{
     color: red;
@@ -33,9 +12,19 @@ h3{
     color: red;
 }
 h4{
-    text-align: justify;
+    text-align: left;
     color: green;
     background-color: black;
-    width: 500px;
+    width: 800px;
     padding: 10px;
+}
+a:link{
+  color: rgb(0, 0, 238); /* azul */
+}
+a:visited{
+  color: rgb(85, 26, 139); /* púrpura */
+}
+th{
+    text-align: center;
+    color: red;
 }

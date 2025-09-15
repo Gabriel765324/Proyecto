@@ -31,6 +31,5 @@
             }
         ?>
     </center>
-    </form>
 </body>
 </html>

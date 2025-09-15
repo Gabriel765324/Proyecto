@@ -1,3 +1,7 @@
+*{
+    position: absolute;
+    text-align: center;
+}
 .Espacio_para_poner_el_nombre_creado{
     margin-top: 29vh;
     margin-left: 38vw;

@@ -1,24 +1,25 @@
 *{
-    text-align: center;
-    position: absolute;
+    /*position: absolute;*/
     margin: 0px;
 }
 body{
     background-color: rgba(0, 255, 255, 0.124);
 }
 .Fondo{
-    background-image: url("/Proyecto/Fotos/C++.png");
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/Proyecto/Fotos/C++.png") no-repeat center center;
     background-size: 44vw 100vh;
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
-    margin-top: 0px;
-    margin-left: 0px;
     opacity: 0.4;
-    width: 100vw;
-    height: 100vh;
+    z-index: -1;
 }
 .Barra_superior{
-    background-color: rgba(255, 0, 0, 1);
+    text-align: center;
+    position: absolute;
+    background-color: rgb(255, 0, 0);
     margin-top: 0px;
     margin-left: 0px;
     width: 100vw;
@@ -26,6 +27,8 @@ body{
     border: 0px solid black;
 }
 .Inicio{
+    text-align: center;
+    position: absolute;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     background-color: gold;
@@ -37,6 +40,8 @@ body{
     border-radius: 44px 44px 44px 44px;
 }
 .Inicio:hover{
+    text-align: center;
+    position: absolute;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     background-color: rgb(255, 255, 0);
@@ -48,6 +53,8 @@ body{
     border-radius: 44px 44px 44px 44px;
 }
 .Cursos{
+    text-align: center;
+    position: absolute;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     background-color: gold;
@@ -59,6 +66,8 @@ body{
     border-radius: 44px 44px 44px 44px;
 }
 .Cursos:hover{
+    text-align: center;
+    position: absolute;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     background-color: rgb(255, 255, 0);
@@ -70,6 +79,8 @@ body{
     border-radius: 44px 44px 44px 44px;
 }
 .Problemas{
+    text-align: center;
+    position: absolute;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     background-color: gold;
@@ -81,6 +92,8 @@ body{
     border-radius: 44px 44px 44px 44px;
 }
 .Problemas:hover{
+    text-align: center;
+    position: absolute;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     background-color: rgb(255, 255, 0);
@@ -92,6 +105,8 @@ body{
     border-radius: 44px 44px 44px 44px;
 }
 .Cuentas{
+    text-align: center;
+    position: absolute;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     background-color: gold;
@@ -103,6 +118,8 @@ body{
     border-radius: 44px 44px 44px 44px;
 }
 .Cuentas:hover{
+    text-align: center;
+    position: absolute;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     background-color: rgb(255, 255, 0);
@@ -114,6 +131,8 @@ body{
     border-radius: 44px 44px 44px 44px;
 }
 .Perfil{
+    text-align: center;
+    position: absolute;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     background-color: gold;
@@ -126,6 +145,8 @@ body{
     padding: 0px;
 }
 .Perfil:hover{
+    text-align: center;
+    position: absolute;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     background-color: rgb(255, 255, 0);
