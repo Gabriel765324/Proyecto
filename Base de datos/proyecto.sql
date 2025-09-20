@@ -20,9 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `proyecto`
 --
-CREATE USER 'Usuario_del_curso_de_programaci_n'@'localhost' IDENTIFIED BY '2222';
-GRANT SELECT, UPDATE, INSERT ON Proyecto.Usuarios TO 'Usuario_del_curso_de_programaci_n'@'localhost';
-FLUSH PRIVILEGES;
 -- --------------------------------------------------------
 
 --
@@ -67,3 +64,7 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+CREATE USER 'Usuario_del_curso_de_programaci_n'@'localhost' IDENTIFIED BY '2222';
+GRANT SELECT, UPDATE, INSERT ON Proyecto.Usuarios TO 'Usuario_del_curso_de_programaci_n'@'localhost';
+FLUSH PRIVILEGES;
