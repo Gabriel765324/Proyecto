@@ -609,8 +609,8 @@
     max(Valor1, Valor2), que saca el máximo de Valor1 y Valor2; abs(Valor), que saca el valor 
     absoluto de un Valor; __gcd(Valor1, Valor2), que saca el máximo común divisor de Valor1 y 
     Valor2; y swap(Variable1, Variable2);, que intercambia los valores de Variable1 y Variable2. 
-    Con eso ya sabes lo básico para poder programar en C++. Ahora podemos empezar con los algoritmos 
-    y estructuras de datos.
+    <h2>Con eso ya sabes lo básico para poder programar en C++. Ahora podemos empezar con los algoritmos 
+    y estructuras de datos.</h2>
     </div>
 </body>
 </html>

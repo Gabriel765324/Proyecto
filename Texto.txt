@@ -1,10 +1,37 @@
     #include "bits/stdc++.h"<br>
     using namespace std;<br>
+    int LSOne(int n){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return n & -n;<br>
+    }<br>
+    deque&lt;int&gt; _rbol, Arreglo;<br>
+    void Crear(){ //Usamos & para que pase los elementos más rápido.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;int n = Arreglo.size();<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;_rbol.assign(n + 1, 0);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 0; i &lt; n; i++){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_rbol[i + 1] += Arreglo[i];<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(i + 1 + LSOne(i + 1) &lt;= n) _rbol[i + 1 + LSOne(i + 1)] += _rbol[i + 1];<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+    }<br>
+    int Consulta(int i, int j){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;if(i &gt; 0) return Consulta(0, j) - Consulta(0, i - 1);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;int Respuesta = 0;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;for(j++; j &gt; 0; j -= LSOne(j)) Respuesta += _rbol[j];<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return Respuesta;<br>
+    }<br>
+    void Actualizar(int i, int v){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;int Suma = v - Arreglo[i];<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Arreglo[i] = v; //No olvidemos también modificar el valor del arreglo original para poder hacer futuras actualizaciones.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;for(i++; i &lt;= Arreglo.size(); i += LSOne(i)) _rbol[i] += Suma;<br>
+    }<br>
     int main(){<br>
     &nbsp;&nbsp;&nbsp;&nbsp;ios_base::sync_with_stdio(0);<br>
     &nbsp;&nbsp;&nbsp;&nbsp;cin.tie(0);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;deque&lt;int&gt; Arreglo = {4, 287, 27, 8, 12, 228, 7, 25, 6, 17, 45, 12};<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 1; i &lt; 12; i++) Arreglo[i] += Arreglo[i - 1];<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;"La suma del rango [6, 8] es "&lt;&lt;Arreglo[8] - Arreglo[5]&lt;&lt;".";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Arreglo = {4, -287, 27, 8, -12, 228, 7, -25, -6, 17, -45, 12, 127, 98, -34, 0, 283};<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Crear();<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;Consulta(4, 6)&lt;&lt;"\n";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Actualizar(5, -3);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;Consulta(4, 6)&lt;&lt;"\n";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Actualizar(5, 0);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;Consulta(4, 6)&lt;&lt;"\n";<br>
     &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
-    }<br>
+    }

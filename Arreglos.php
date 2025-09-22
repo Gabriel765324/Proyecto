@@ -9,10 +9,12 @@
 <body>
     <?php include("Plantilla.php"); ?>
     <br><br><br><br>
+    <div style="padding: 10px;">
     <table border="2">
         <tr><td><center><a href="Suma_de_prefijos.php">Suma de prefijos.</a></center></td><td><center><a href="Algoritmo_de_Kadane.php">Algoritmo de Kadane.</a></center></td></tr>
         <tr><td><center><a href="_rbol_de_Fenwick.php">Árbol de Fenwick.</a></center></td><td><center><a href="Mesa_dispersa.php">Mesa dispersa.</a></center></td></tr>
         <tr><td><center><a href="_rbol_de_segmentos.php">Árbol de segmentos.</a></center></td></tr>
     </table>
+    </div>
 </body>
 </html>

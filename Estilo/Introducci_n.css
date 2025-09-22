@@ -8,6 +8,10 @@ h1{
     color: red;
     text-align: center;
 }
+h2{
+    color: blue;
+    text-align: center;
+}
 h3{
     color: red;
 }
@@ -27,4 +31,9 @@ a:visited{
 th{
     text-align: center;
     color: red;
+}
+._rbol_de_Fenwick{
+    text-align: center;
+    width: 28vw;
+    margin-left: 36vw;
 }
