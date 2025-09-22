@@ -1,0 +1,10 @@
+    #include "bits/stdc++.h"<br>
+    using namespace std;<br>
+    int main(){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;ios_base::sync_with_stdio(0);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cin.tie(0);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;deque&lt;int&gt; Arreglo = {4, 287, 27, 8, 12, 228, 7, 25, 6, 17, 45, 12};<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 1; i &lt; 12; i++) Arreglo[i] += Arreglo[i - 1];<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;"La suma del rango [6, 8] es "&lt;&lt;Arreglo[8] - Arreglo[5]&lt;&lt;".";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+    }<br>

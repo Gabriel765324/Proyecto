@@ -10,7 +10,7 @@
     <?php include("Plantilla.php"); ?>
     <br><br><br><br>
     <div style="padding: 10px;">
-    <center><h1 class="Título">INTRODUCCIÓN.</h1></center>
+    <center><h1 class="Ttulo">INTRODUCCIÓN.</h1></center>
     Bienvenido/a a compitiendo junto a C++, en esta página podrás aprender sobre temas que te ayudarán a
     aprender a usar C++ en programación competitiva.
     <h3>¿Qué es C++?</h3>
@@ -150,6 +150,7 @@
             cuidado con los caracteres del código ASCII extendido.</td></tr>
         <tr><td>string</td><td>Cadenas de caracteres.</td></tr>
         <tr><td>bool</td><td>Verdadero o falso.</td></tr>
+        <tr><td>Estructura&lt;Tipo de dato&gt;::iterator</td><td>Una posición de una estructura de datos.</td></tr>
         <tr><td>auto</td><td>Cualquier cosa que se pueda guardar en otro tipo de dato.</td></tr>
     </table></center>
     Para cambiar el valor de una variable se usa el signo =. Con valores numéricos se 
@@ -290,6 +291,8 @@
     </h4>
     Ten en cuenta que las variables creadas dentro de if, else y else if no se pueden usar fuera de
     estos.
+    También es posible usar condicionales if, else y else if sin las llaves, pero esto hará que 
+    solo ejecuten la primera orden que vean si se cumple su condición.
     <h3>Bucles</h3>
     Los bucles en C++ son while, for y do while. <br>
     <h4>
@@ -316,7 +319,9 @@
         &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
     } 
     </h4>
-    Ten en cuenta que no puedes usar variables creadas en bucles fuera de esos bucles.
+    Ten en cuenta que no puedes usar variables creadas en bucles fuera de esos bucles. También 
+    es posible usar bucles sin llaves, pero solo ejecutarán la primera orden que vean durante 
+    cada repetición.
     <h3>Estructuras de datos</h3>
     Las estructuras de datos de C++ nos permiten almacenar varios valores e includo otras estructuras de
     datos. Estas son algunas estructuras de datos. <br>
@@ -348,7 +353,7 @@
     </h4>
     Ahora veamos algunas funciones con deque y vector asumiendo que se llama a. <br>
     <table border="2">
-        <tr><th>Funciones.</th><th>Lo que hace.</th></tr>
+        <tr><th>Funciones.</th><th>Lo que hacen.</th></tr>
         <tr><td>a.size()</td><td>Nos da el tamaño de a.</td></tr>
         <tr><td>a.push_back(Algo);</td><td>Añade Algo al final de a. Algo debe ser del
             mismo tipo de dato que lo que guarda a.
@@ -361,6 +366,8 @@
             con vectores.
         </td></tr>
         <tr><td>a.back()</td><td>Es equivalente a escribir a[a.size() - 1].</td></tr>
+        <tr><td>a.begin() + Índice</td><td>Iterador de la posición i de a.</td></tr>
+        <tr><td>a.end()</td><td>Iterador del final de a.</td></tr>
         <tr><td>a.insert(a.begin() + Índice, Valor);</td><td>Inserta Valor en la posición
             Índice de a. No lo uses mucho porque su complejidad es O(Tamaño de a).
         </td></tr>
@@ -373,12 +380,237 @@
         <tr><td>sort(a.rbegin(), a.rend());</td><td>Ordena a de mayor a menor.
             No lo uses mucho porque su complejidad es O(Tamaño de a log Tamaño de a).
         </td></tr>
-        <tr><td></td><td></td></tr>
-        <tr><td></td><td></td></tr>
-        <tr><td></td><td></td></tr>
-        <tr><td></td><td></td></tr>
-        <tr><td></td><td></td></tr>
+        <tr><td>a.assign(Tamaño, Elemento);</td><td>Cambia el tamaño de a por tamaño 
+            y cambia todos sus elementos por Elemento. No lo uses mucho porque su 
+            complejidad es O(Tamaño);
+        </td></tr>
+        <tr><td>a.clear();</td><td>Borra todos los elementos de a.</td></tr>
+        <tr><td>a.empty()</td><td>Da 1 si a está vacío y da 0 si no lo está.</td></tr>
+        <tr><td>lower_bound(a.begin(), a.end(), Elemento)</td><td>Esta función solo se 
+            puede usar si a está ordenado, da el puntero al primer elemento mayor 
+            o igual que Elemento o a.end() si no existe. Su complejidad es O(log Tamaño de a).
+        </td></tr>
+        <tr><td>upper_bound(a.begin(), a.end(), Elemento)</td><td>Esta función solo se 
+            puede usar si a está ordenado, da el puntero al primer elemento mayor 
+            que Elemento o a.end() si no existe. Su complejidad es O(log Tamaño de a).
+        </td></tr>
     </table>
+    Veamos un ejemplo de uso.
+    <h4>
+    #include "bits/stdc++.h"<br>
+    using namespace std;<br>
+    int main(){<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;ios_base::sync_with_stdio(0);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;cin.tie(0);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;int n;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;cin&gt;&gt;n;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;deque&lt;int&gt; a(n);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 0; i < a.size(); i++){<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin&gt;&gt;a[i];<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;sort(a.begin(), a.end());<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;if(a.empty()){<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;"El deque está vacío.\n"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;} else {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.clear();<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;a.assign(n, 2);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;a.push_back(n);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;*(a.begin() + n)&lt;&lt;"\n";//No olvides 
+        poner un * para acceder al elemento de un iterador.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;a.pop_front();<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+    } 
+    </h4>
+    <h3>String</h3>
+    String no solo es como un tipo de dato, es similar a usar vector&lt;char&gt;. La ventaja es que también tiene 
+    algunas funciones extra como s.substr(Índice, Longitud), que da la subcadena desde la posición 
+    Índice con la longitud definida por Longitud.
+    <h3>Tuple</h3>
+    Tuple nos permite tener varios tipos de datos en un mismo lugar. Se declara como
+    tuple&lt;Tipo de dato 1, Tipo de dato 2, ...&gt; Nombre;. Puedes poner cuantos tipos de datos
+    quieras. Para acceder a los elementos se usa get&lt;Índice&gt;(Nombre). Veamos un ejemplo:
+    <h4>
+    #include "bits/stdc++.h"<br>
+    using namespace std;<br>
+    int main(){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;ios_base::sync_with_stdio(0);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cin.tie(0);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;tuple&lt;int, char, string&gt; t;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;get&lt;0&gt;(t) = 2;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;get&lt;1&gt;(t) = 'G';<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;get&lt;2&gt;(t) = "Hola";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;get&lt;0&gt;(t)&lt;&lt;" "&lt;&lt;get&lt;1&gt;(t)&lt;&lt;" "&lt;&lt;get&lt;2&gt;(t);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+    }
+    </h4>
+    <h3>Set y multiset</h3>
+    Estas son estructuras de datos que permiten mantener una lista ordenada de elementos. La diferencia 
+    es que set no puede tener elementos repetidos y multiset sí puede. Añadir elementos aquí tiene 
+    complejidad logarítmica y no constante a diferencia de los vectores y deques. Se 
+    declara como set&lt;Tipo de dato&gt; Nombre; o multiset&lt;Tipo de dato&gt; Nombre;. Ten 
+    en cuenta que estos solo se pueden recorrer con iteradores o con un for algo 
+    diferente al que ta se vio. Veamos sus 
+    funciones, asumiendo que nuestro set o multiset de llama s.
+    <table border="2">
+        <tr><th>Funciones.</th><th>Lo que hacen.</th></tr>
+        <tr><td>s.insert(Elemento);</td><td>Inserta Elemento a s.</td></tr>
+        <tr><td>s.count(Elemento)</td><td>Da la cantidad de apariciones de Elemento.</td></tr>
+        <tr><td>s.lower_bound(Elemento)</td><td>Da el puntero al primer elemento mayor o igual 
+    que Elemento o s.end() si no existe.</td></tr>
+        <tr><td>s.upper_bound(Elemento)</td><td>Da el puntero al primer elemento mayor que 
+            Elemento o s.end() si no existe.</td></tr>
+        <tr><td>s.erase(Elemento)</td><td>Si Elemento es un puntero, borra ese elemento. Si
+            Elemento es un valor, borra todas sus apariciones de s.</td></tr>
+        <tr><td>s.find(Elemento)</td><td>Da el puntero a Elemento o s.end() si no existe.</td></tr>
+        <tr><td>s.clear()</td><td>Borra todos los elementos de s.</td></tr>
+        <tr><td>s.empty()</td><td>Da 1 si s está vacío o 0 si no lo está.</td></tr>
+        <tr><td>s.size()</td><td>Da el tamaño de s.</td></tr>
+    </table>
+    Veamos un ejemplo de uso de set y multiset;
+    <h4>
+    #include "bits/stdc++.h"<br>
+    using namespace std;<br>
+    int main(){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;ios_base::sync_with_stdio(0);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cin.tie(0);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;set&lt;int&gt; s;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 0; i &lt; 22; i++) s.insert(i * ((i % 2 == 0) ? 1 : -1));<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;for(auto E: s) cout&lt;&lt;E&lt;&lt;" ";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;s.erase(s.begin());<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;s.erase(-5);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;"\n"&lt;&lt;s.size()&lt;&lt;"\n";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;for(auto E: s) cout&lt;&lt;E&lt;&lt;" ";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;"\n"&lt;&lt;*s.lower_bound(2)&lt;&lt;" "&lt;&lt;*s.upper_bound(2); //No olvides los * para acceder al contenido de iteradores.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;s.clear();<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;" "&lt;&lt;s.size();<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+    }
+    </h4>
+    <h3>Map</h3>
+    Map permite guardar elementos bajo llaves. Para declararlo se usa map&lt;Tipo de dato de la 
+    llave, Tipo de dato que guarda&gt; Nombre;. Ten en cuenta que añadir elementos a un map 
+    y acceder a ellos tiene complejidad logarítmica. Veamos algunas de sus funciones, asumiendo 
+    que nuestro map se llama m.
+    <table border="2">
+        <tr><th>Funciones.</th><th>Lo que hacen.</th></tr>
+        <tr><td>m.size()</td><td>Da el tamaño de m.</td></tr>
+        <tr><td>m.count(Llave)</td><td>Da 1 si ya se está usando la Llave y da 0 si 
+            no se está usando.</td></tr>
+        <tr><td>m.clear();</td><td>Borra todos los elementos de m.</td></tr>
+        <tr><td>m.size()</td><td>Da la cantidad de llaves diferentes que están en uso.</td></tr>
+        <tr><td>m.erase(Llave)</td><td>Borra la Llave y lo que está guardando.</td></tr>
+    </table>
+    Si quieres recorrer un mapa, puedes usar un for similar al que se usa con set o guardar cada 
+    llave en un set. Una curiosidad es que si tratas de usar una llave que aún no está en uso, el 
+    map dará valores dependiendo del tipo de dato, por ejemplo, un map que guarda cualquier tipo 
+    de dato numérico dará un 0,
+    un map que guarda cadenas dará una cadena vacía y un map que guarda vectores, deques o sets dará 
+    estas estructuras de datos vacías. Veamos un ejemplo:
+    <h4>
+    #include "bits/stdc++.h"<br>
+    using namespace std;<br>
+    int main(){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;ios_base::sync_with_stdio(0);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cin.tie(0);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;map&lt;int, int&gt; Mapa;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Mapa[0] = 1;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;Mapa[0]&lt;&lt;" "&lt;&lt;Mapa[1]&lt;&lt;" "&lt;&lt;Mapa[2]&lt;&lt;"\n";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Mapa.erase(0);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;Mapa[0]&lt;&lt;" "&lt;&lt;Mapa[1]&lt;&lt;" "&lt;&lt;Mapa[2]&lt;&lt;"\n";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;map&lt;int, deque&lt;int&gt; &gt; Mapa2;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Mapa2[2] = {3, 2, 9, 7};<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 0; i &lt; 4; i++){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int j = 0; j &lt; Mapa2[i].size(); j++) cout&lt;&lt;Mapa2[i][j]&lt;&lt;" ";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;"\n";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Mapa.clear();<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 0; i &lt; 22; i++){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mapa[i] = i * i;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;for(auto E: Mapa){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;"Llave: "&lt;&lt;E.first&lt;&lt;" Elemento: "&lt;&lt;E.second&lt;&lt;"\n";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+    }
+    </h4>
+    <h3>Funciones</h3>
+    Puedes definir tus propias funciones en los códigos. Para hacerlo se debe escribir 
+    Tipo de dato Nombre(Parámetro 1, Parámetro 2, ...){Función.}. Los parámetros deben 
+    estar compuestos por su tipo de dato y el nombre que tendrán en la función (no es 
+    necesario que tengan el mismo nombre que las variables de la función que está 
+    llamando a nuestra función). También puedes colocar el símbolo & al lado izquierdo
+    de cada nombre de parámetro para que cualquier modificación que se haga al parámetro 
+    dentro de la función también afecte a la variable de la función que llamó a nuestra función.
+    En caso de que quieras 
+    que la función no retorne un valor, en Tipo de dato escribe void. Para que la función 
+    devuelva un valor, usa return Valor; o, en caso de que uses void, usa return;. Para llamar 
+    a una función se debe colocar su nombre y sus parámetros encerrados entre paréntesis.
+    Veamos un ejemplo:
+    <h4>
+    #include "bits/stdc++.h"<br>
+    using namespace std;<br>
+    int Suma(int x, int y){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return x + y;<br>
+    }<br>
+    void Otra_suma(int _1, int _2){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;_1 + _2&lt;&lt;"\n";<br>
+    }<br>
+    void Ordenar(vector&lt;int&gt; &a){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;sort(a.begin(), a.end());<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;//Sí afecta al arreglo porque sí se está usando el símbolo &.<br>
+    }<br>
+    void No_ordenar(vector&lt;int&gt; a){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;sort(a.begin(), a.end());<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;//No afecta al arreglo porque no se está usando el símbolo &.<br>
+    }<br>
+    int Serie_de_Fibonacci(int a){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;if(a == 0 or a == 1) return 1;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return Serie_de_Fibonacci(a - 1) + Serie_de_Fibonacci(a - 2);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;//También puedes hacer que una función se llame a sí misma. Asegúrate de añadir un caso base para evitar que se llame a sí misma indefinidamente.<br>
+    }<br>
+    int main(){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;ios_base::sync_with_stdio(0);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cin.tie(0);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;int a, b;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cin&gt;&gt;a&gt;&gt;b;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;Suma(a, b)&lt;&lt;"\n";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Otra_suma(a, b);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;vector&lt;int&gt; Elementos;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 0; i &lt; 22; i++){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elementos.push_back(i * ((i % 2 == 0) ? 2 : -4));<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 0; i &lt; Elementos.size(); i++){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;Elementos[i]&lt;&lt;" ";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;"\n";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;No_ordenar(Elementos);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 0; i &lt; Elementos.size(); i++){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;Elementos[i]&lt;&lt;" ";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;"\n";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Ordenar(Elementos);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 0; i &lt; Elementos.size(); i++){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;Elementos[i]&lt;&lt;" ";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;"\n"&lt;&lt;Serie_de_Fibonacci(6)&lt;&lt;"\n";<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+    }
+    </h4>
+    Las funciones se terminan de ejecutar inmediatamente después de return. <br>
+    C++ también tiene algunas otras funciones ya hechas. Estas son log10(Número), que saca el 
+    logaritmo en base 10 de un número; exp(Número), que saca el resultado de elevar e al Número; 
+    sin(Ángulo), que saca el seno de un Ángulo expresado en radianes; cos(Ángulo), que saca el coseno 
+    de un Ángulo expresado en radianes; tan(Ángulo), que saca la tangente de un Ángulo expresado 
+    en radianes; asin(Valor), que saca el seno inverso de un Valor y lo expresa en radianes; 
+    acos(Valor), que saca el coseno inverso de un valor y lo expresa en radianes; atan(Valor), 
+    que saca la tangente inversa de un ángulo y la expresa en radianes; sqrt(Valor), que saca 
+    la raíz cuadrada de un Valor; min(Valor1, Valor2), que saca el mínimo de Valor1 y Valor2;
+    max(Valor1, Valor2), que saca el máximo de Valor1 y Valor2; abs(Valor), que saca el valor 
+    absoluto de un Valor; __gcd(Valor1, Valor2), que saca el máximo común divisor de Valor1 y 
+    Valor2; y swap(Variable1, Variable2);, que intercambia los valores de Variable1 y Variable2. 
+    Con eso ya sabes lo básico para poder programar en C++. Ahora podemos empezar con los algoritmos 
+    y estructuras de datos.
     </div>
 </body>
 </html>
