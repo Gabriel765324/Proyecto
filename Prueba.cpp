@@ -1,37 +1,48 @@
 #include "bits/stdc++.h"
 using namespace std;
-int LSOne(int n){
-    return n & -n;
-}
-deque<int> _rbol, Arreglo;
-void Crear(){ //Usamos & para que pase los elementos más rápido.
-    int n = Arreglo.size();
-    _rbol.assign(n + 1, 0);
-    for(int i = 0; i < n; i++){
-        _rbol[i + 1] += Arreglo[i];
-        if(i + 1 + LSOne(i + 1) <= n) _rbol[i + 1 + LSOne(i + 1)] += _rbol[i + 1];
+//                    0   1   2   3  4    5   6  7   8  9   10   11  12   13  14  15 16
+deque<int> a = {4, 287, 27, 8, 12, 228, 7, 25, 6, 17, -45, 12, 127, 98, 34, 0, 283};
+deque<int> _rbol(17 * 4 + 22), Propagaci_n(17 * 4 + 22, 0); //El + 22 es solo para tener un poco más y estar seguro.
+void Crear(int i, int d, int p){
+    if(i == d){ //Si el inicio es igual al final, significa que nuestro segmento tiene longitud 1.
+        _rbol[p] = a[i];
+        return;
     }
+    int Promedio = (i + d) / 2;
+    Crear(i, Promedio, p * 2);
+    Crear(Promedio + 1, d, p * 2 + 1);
+    _rbol[p] = _rbol[p * 2] + _rbol[p * 2 + 1]; 
 }
-int Consulta(int i, int j){
-    if(i > 0) return Consulta(0, j) - Consulta(0, i - 1);
-    int Respuesta = 0;
-    for(j++; j > 0; j -= LSOne(j)) Respuesta += _rbol[j];
-    return Respuesta;
+void Propagar(int i, int d, int p){
+    _rbol[p] += Propagaci_n[p] * (d - i + 1);
+    if(i != d){
+        Propagaci_n[p * 2] += Propagaci_n[p];
+        Propagaci_n[p * 2 + 1] += Propagaci_n[p];
+    }
+    Propagaci_n[p] = 0;
 }
-void Actualizar(int i, int v){
-    int Suma = v - Arreglo[i];
-    Arreglo[i] = v; //No olvidemos también modificar el valor del arreglo original para poder hacer futuras actualizaciones.
-    for(i++; i <= Arreglo.size(); i += LSOne(i)) _rbol[i] += Suma;
+int Consulta(int i, int d, int p, int I, int D){
+    Propagar(i, d, p);
+    if(i >= I and d <= D) return _rbol[p]; //Vemos si nuestro rango actual está contenido en el rango de consulta.
+    if(i > D or d < I) return 0; //Vemos si nuestro rango está fuera del rango de consulta.
+    int Promedio = (i + d) / 2;
+    return Consulta(i, Promedio, p * 2, I, D) + Consulta(Promedio + 1, d, p * 2 + 1, I, D);
+}
+void Actualizar(int i, int d, int p, int I, int D, int v){
+    Propagar(i, d, p);
+    if(i >= I and d <= D){//Vemos si nuestro rango actual está contenido en el rango de consulta.
+        Propagaci_n[p] += v;
+        Propagar(i, d, p);
+        return;
+    }
+    if(i > D or d < I) return; //Vemos si nuestro rango está fuera del rango de consulta.
+    int Promedio = (i + d) / 2;
+    Actualizar(i, Promedio, p * 2, I, D, v);
+    Actualizar(Promedio + 1, d, p * 2 + 1, I, D, v);
+    _rbol[p] = _rbol[p * 2] + _rbol[p * 2 + 1];
 }
 int main(){
     ios_base::sync_with_stdio(0);
     cin.tie(0);
-    Arreglo = {4, -287, 27, 8, -12, 228, 7, -25, -6, 17, -45, 12, 127, 98, -34, 0, 283};
-    Crear();
-    cout<<Consulta(4, 6)<<"\n";
-    Actualizar(5, -3);
-    cout<<Consulta(4, 6)<<"\n";
-    Actualizar(5, 0);
-    cout<<Consulta(4, 6)<<"\n";
     return 0;
 }

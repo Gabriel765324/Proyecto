@@ -8,8 +8,7 @@
 </head>
 <body>
     <?php include("Plantilla.php"); ?>
-    <br><br><br><br>
-    <div style="padding: 10px;">
+    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
     <center><h1 class="Ttulo">SUMA DE PREFIJOS.</h1></center>
     La suma de prefijos es una estructura de datos que nos permite encontrar la suma de cada 
     prefijo en un arreglo y usar esas sumas para poder encontrar la suma de cada uno de 
@@ -18,7 +17,8 @@
     <h3>¿Cómo funciona?</h3>
     Iniciamos con un arreglo igual al arreglo del cual queremos sacar la suma de prefijos e iteramos
     desde la posición 1 hasta la última posición sumando a la posición actual lo que había en la 
-    anterior posición. <br>
+    anterior posición.
+    <h3>Creación</h3>
     Si queremos sacar la suma de los valores de un subarreglo que va desde la posición i hasta la 
     posición j, solo tenemos que tomar el valor en la posición j de nuestra suma de prefijos y 
     restarle el valor en la posición i - 1 de la suma de prefijos. Ten en cuenta que no se debe restar
@@ -37,7 +37,10 @@
     </h4>
     La complejidad del preproceso es O(n) donde n es el tamaño del arreglo y la complejidad por 
     consulta es O(1). Esto hace que sea más rápido que calcular la suma de cada subarreglo en cada 
-    consulta sumando cada elemento individualmente, cuya complejidad es O(n) por consulta.
+    consulta sumando cada elemento individualmente, cuya complejidad es O(n) por consulta. Ten en 
+    cuenta que puedes usar una suma de prefijos con otras operaciones solo si estas tienen un 
+    inverso como la suma y la resta, la multiplicación y la división y otras. No funciona con las 
+    operaciones sin inversos como el mínimo.
     </div>
 </body>
 </html>

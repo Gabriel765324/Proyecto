@@ -1,6 +1,14 @@
 <?php
     include("Conectar22.php");
     if(!(session_status() === PHP_SESSION_ACTIVE)){
+        if(!isset($_POST["Correo"])){
+            ?>
+            <script>
+                alert("No se llenó el formulario.");
+                window.location = "index.php";
+            </script>
+            <?php
+        }
         $Correo = $_POST["Correo"];
         $Contrase_a = $_POST["Contrase_a"];
         $Consulta = $Conectar -> prepare("SELECT * FROM `Usuarios` WHERE `Correo` LIKE ?");

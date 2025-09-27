@@ -13,9 +13,9 @@
     <a href="Crear_cuenta.php" class="Enlace_para_el_registro">Regístrese.</a>
     <form action="Iniciar_sesi_n22.php" method="post">
         <div class="Ingresar_correo">Ingrese su correo electrónico</div>
-        <input type="email" name="Correo" id="" required class="Poner_aqu__el_correo" maxlenght="255">
+        <input type="email" name="Correo" id="" required class="Poner_aqu__el_correo" maxlenght="255" autocomplete="off">
         <div class="Ingresar_contrase_a">Ingrese su contraseña</div>
-        <input type="password" name="Contrase_a" id="" required class="Poner_aqu__la_contrase_a" maxlenght="20">
+        <input type="password" name="Contrase_a" id="" required class="Poner_aqu__la_contrase_a" maxlenght="20" autocomplete="off">
         <input type="submit" value="Iniciar sesión" class="Iniciar_sesi_n">
     </form>
 </body>

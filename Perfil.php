@@ -34,15 +34,15 @@
     <div class="Modificar_datos">Modificar datos</div>
     <form action="Editar22.php" method="post">
         <div class="Nombre">Nuevo nombre</div>
-        <input type="text" name="Nombre" required class="Dar_nombre" maxlength="20">
+        <input type="text" name="Nombre" required class="Dar_nombre" maxlength="20" autocomplete="off">
         <div class="Correo">Nuevo correo</div>
-        <input type="email" name="Correo" required class="Dar_correo" maxlength="255">
+        <input type="email" name="Correo" required class="Dar_correo" maxlength="255" autocomplete="off">
         <div class="Contrase_a">Nueva contraseña</div>
-        <input type="password" name="Contrase_a" required class="Dar_contrase_a" maxlength="20">
+        <input type="password" name="Contrase_a" required class="Dar_contrase_a" maxlength="20" autocomplete="off">
         <div class="Contrase_a2">Confirme su contraseña</div>
-        <input type="password" name="Contrase_a2" required class="Dar_contrase_a2" maxlength="20">
+        <input type="password" name="Contrase_a2" required class="Dar_contrase_a2" maxlength="20" autocomplete="off">
         <div class="Antigua_contrase_a">Antigua contraseña</div>
-        <input type="password" name="Antigua_contrase_a" required class="Dar_antigua_contrase_a" maxlength="20">
+        <input type="password" name="Antigua_contrase_a" required class="Dar_antigua_contrase_a" maxlength="20" autocomplete="off">
         <input type="submit" value="Guardar cambios" class="Enviar">
     </form>
 </body>

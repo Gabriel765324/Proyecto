@@ -1,5 +1,13 @@
 <?php
     include("Conectar22.php");
+    if(!isset($_POST["Correo"])){
+        ?>
+        <script>
+            alert("No se llenó el formulario.");
+            window.location = "index.php";
+        </script>
+        <?php
+    }
     $Nombre = $_POST["Nombre"];
     $Correo = $_POST["Correo"];
     $Contrase_a = $_POST["Contrase_a"];

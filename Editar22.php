@@ -69,9 +69,13 @@
     $Consulta -> execute();
     $Resultado = $Consulta -> get_result();
     $Bien = 1;
+    $Correito = $_POST["Correo"];
     while($Fila = $Resultado -> fetch_array()){
-        $Bien = 0;
-        break;
+        $Otrito = $Fila[2];
+        if($_POST["Correo"] == $Fila[2] and $Fila[0] != $_SESSION["ID"]){
+            $Bien = 0;
+            break;
+        }
     }
     if($Bien == 0){
         ?>

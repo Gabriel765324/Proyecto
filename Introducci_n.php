@@ -8,8 +8,7 @@
 </head>
 <body>
     <?php include("Plantilla.php"); ?>
-    <br><br><br><br>
-    <div style="padding: 10px;">
+    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
     <center><h1 class="Ttulo">INTRODUCCIÓN.</h1></center>
     Bienvenido/a a compitiendo junto a C++, en esta página podrás aprender sobre temas que te ayudarán a
     aprender a usar C++ en programación competitiva.
@@ -29,19 +28,19 @@
     También debes saber que se toma en cuenta cada variable que se use. Por ejemplo, si sumas todos los 
     números de 1 a N y al resultado le sumas todos los números de 1 a M uno por uno, la complejidad es
     O(N + M). <br>
-    Para terminar, si tienes algún polinomio, solo usa el término con grado mayor. Por ejemplo, O(4 * N² + N * 5
-    + M² + 10 * M + 3 * N * 2ᴺ) debería escribirse solo como O(N² + M² + N * 2ᴺ).
+    Para terminar, si tienes algún polinomio, solo usa el término con grado mayor. Por ejemplo, O(4 * N<sup>2</sup> + N * 5
+    + M<sup>2</sup> + 10 * M + 3 * N * 2<sup>N</sup>) debería escribirse solo como O(N<sup>2</sup> + M<sup>2</sup> + N * 2<sup>N</sup>).
     Una vez tengas esto, reemplaza los valores máximos de la entrada en la función. Los códigos suelen
     no pasarse del tiempo límite si este valor es menor que 10⁸, aunque puede variar un poco dependiendo 
     del tiempo límite del problema.
     <table border="2">
         <tr><th>Complejidad.</th><th>Tamaño de la entrada máximo con el que suele funcionar aproximadamente.</th></tr>
-        <tr><td>O(2ᴺ)</td><td>20</td></tr>
-        <tr><td>O(N⁴)</td><td>50</td></tr>
-        <tr><td>O(N³)</td><td>200</td></tr>
-        <tr><td>O(N²)</td><td>5000</td></tr>
+        <tr><td>O(2<sup>N</sup>)</td><td>20</td></tr>
+        <tr><td>O(N<sup>4</sup>)</td><td>50</td></tr>
+        <tr><td>O(N<sup>2</sup>)</td><td>200</td></tr>
+        <tr><td>O(N<sup>2</sup>)</td><td>5000</td></tr>
         <tr><td>O(N√N)</td><td>100000</td></tr>
-        <tr><td>O(Nlog²N)</td><td>200000</td></tr>
+        <tr><td>O(Nlog<sup>2</sup>N)</td><td>200000</td></tr>
         <tr><td>O(NlogN)</td><td>1000000</td></tr>
         <tr><td>O(N)</td><td>10000000</td></tr>
     </table>
@@ -294,7 +293,11 @@
     También es posible usar condicionales if, else y else if sin las llaves, pero esto hará que 
     solo ejecuten la primera orden que vean si se cumple su condición.
     <h3>Bucles</h3>
-    Los bucles en C++ son while, for y do while. <br>
+    Los bucles en C++ son while, for y do while. Puedes hacer que se detengan inmediatamente si pones break; o 
+    hacer que salten directo a la siguiente iteración usando continue;. El bucle for es especial porque se le 
+    dan tres cosas separadas por ; que son una orden que ejecutará antes de empezar el bucle, la condición 
+    que hará que continúe el bucle y la instrucción que se ejecutará al final de cada repetición que se ejecuta 
+    incluso si usas continue;.<br>
     <h4>
     #include "bits/stdc++.h"<br>
     using namespace std;<br>
@@ -302,26 +305,32 @@
         &nbsp;&nbsp;&nbsp;&nbsp;ios_base::sync_with_stdio(0);<br>
         &nbsp;&nbsp;&nbsp;&nbsp;cin.tie(0);<br>
         &nbsp;&nbsp;&nbsp;&nbsp;int a = 0;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;while(a < 5){ //Repite mientras se cumpla la condición. <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;while(a < 10){ //Repite mientras se cumpla la condición. <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(a == 7) break; //Hará que se detenga el bucle en 7
+        y pase a ejecutar el resto del código.<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;a&lt;&lt;"\n"; //Imprime a. <br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a++;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;} <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;for(int b = 1; b < 5; b++){ //Primero ejecuta la instrucción de la izquierda,
+        &nbsp;&nbsp;&nbsp;&nbsp;for(int b = 1; b < 10; b++){ //Primero ejecuta la instrucción de la izquierda,
         luego se ejecuta mientras se cumpla la condición del centro y al final de cada repetición ejecuta
         la instrucción de la derecha. <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(b == 7) continue; //Hará que el 7 no se imprima.<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;b&lt;&lt;"\n"; <br>
         &nbsp;&nbsp;&nbsp;&nbsp;} <br>
         &nbsp;&nbsp;&nbsp;&nbsp;a = 0;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;do{<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;a&lt;&lt;"\n";<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;} while(a < 5); Es como while, pero primero se ejecuta lo que está dentro
-        de do antes de ver si se cumple la condición.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;} while(cin>>a); Es como while, pero primero se ejecuta lo que está dentro
+        de do antes de ver si se cumple la condición, que en este caso es cin>>a.<br>
         &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
     } 
     </h4>
     Ten en cuenta que no puedes usar variables creadas en bucles fuera de esos bucles. También 
     es posible usar bucles sin llaves, pero solo ejecutarán la primera orden que vean durante 
-    cada repetición.
+    cada repetición. <br>
+    Si colocas cin>>Algo o getline(cin, Algo) en lugar de la condición del bucle puedes leer hasta el final de 
+    la entrada. Esto es útil para problemas antiguos en donde no se especifica con algún valor inicial de la 
+    entrada el tamaño total que va a tener.
     <h3>Estructuras de datos</h3>
     Las estructuras de datos de C++ nos permiten almacenar varios valores e includo otras estructuras de
     datos. Estas son algunas estructuras de datos. <br>
