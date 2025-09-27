@@ -9,7 +9,7 @@
 <body>
     <?php include("Plantilla.php"); ?>
     <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
-    <h1>Árbol de Fenwick.</h1>
+    <h1>ÁRBOL DE FENWICK</h1>
     Como vimos antes, sacar la suma de un subarreglo eficientemente es fácil con una suma de prefijos, ¿pero qué
     pasaría si se tuviera que modificar algún valor del arreglo? Tendríamos que modificar todos los valores
     de la suma de prefijos que estén en esa posición y después para poder seguir respondiendo consultas. Esto 

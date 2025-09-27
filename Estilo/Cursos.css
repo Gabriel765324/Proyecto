@@ -21,7 +21,7 @@
     text-decoration: underline;
     color: blue;
     background: url(/Proyecto/Fotos/Introducci_n.jpeg), linear-gradient(to bottom, rgb(0, 183, 255) 61%, rgb(254, 101, 101) 39%);
-    background-size: 88px 88px, cover;
+    background-size: 8vw 12.2vh, cover;
     background-position: top center, top left;
     background-repeat: no-repeat, no-repeat;
 }
@@ -51,7 +51,7 @@
     text-decoration: underline;
     color: blue;
     background: url(/Proyecto/Fotos/Grafo.png), linear-gradient(to bottom, rgb(0, 183, 255) 61%, rgb(254, 101, 101) 39%);
-    background-size: 88px 88px, cover;
+    background-size: 6vw 12.2vh, cover;
     background-position: top center, top left;
     background-repeat: no-repeat, no-repeat;
 }
@@ -66,7 +66,7 @@
     text-decoration: underline;
     color: blue;
     background: url(/Proyecto/Fotos/Otros.jpg), linear-gradient(to bottom, rgb(0, 183, 255) 61%, rgb(254, 101, 101) 39%);
-    background-size: 88px 88px, cover;
+    background-size: 8vw 12.2vh, cover;
     background-position: top center, top left;
     background-repeat: no-repeat, no-repeat;
 }

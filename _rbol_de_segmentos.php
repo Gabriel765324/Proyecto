@@ -9,7 +9,7 @@
 <body>
     <?php include("Plantilla.php"); ?>
     <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
-    <h1>Árbol de segmentos.</h1>
+    <h1>ÁRBOL DE SEGMENTOS</h1>
     El árbol de segmentos es una estructura de datos que permite responer a consultas en rangos de un arreglo. <br>
     Las ventajas que tiene sobre el árbol de Fenwick son que no reuiere que la operación que haga tenga un inverso 
     y puede hacer actualizaciones en rangos en lugar de solo elementos individuales y las ventajas que tiene sobre 

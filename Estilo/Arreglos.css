@@ -1,0 +1,156 @@
+.Concepto{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: gold;
+    margin-top: 20.08333vh;
+    margin-left: 14.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.Concepto:hover{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 0);
+    margin-top: 20.08333vh;
+    margin-left: 14.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.Suma{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: gold;
+    margin-top: 20.08333vh;
+    margin-left: 64.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.Suma:hover{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 0);
+    margin-top: 20.08333vh;
+    margin-left: 64.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.Kadane{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: gold;
+    margin-top: 50.25vh;
+    margin-left: 14.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.Kadane:hover{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 0);
+    margin-top: 50.25vh;
+    margin-left: 14.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.Fenwick{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: gold;
+    margin-top: 50.25vh;
+    margin-left: 64.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.Fenwick:hover{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 0);
+    margin-top: 50.25vh;
+    margin-left: 64.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.Mesa{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: gold;
+    margin-top: 80.416666vh;
+    margin-left: 14.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.Mesa:hover{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 0);
+    margin-top: 80.416666vh;
+    margin-left: 14.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.Segmentos{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: gold;
+    margin-top: 80.416666vh;
+    margin-left: 64.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.Segmentos:hover{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 0);
+    margin-top: 80.416666vh;
+    margin-left: 64.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}

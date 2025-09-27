@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arreglos.</title>
-    <link rel="stylesheet" href="Estilo/Introducci_n.css">
+    <title>Arreglos</title>
+    <link rel="stylesheet" href="Estilo/Arreglos.css">
 </head>
 <body>
     <?php include("Plantilla.php"); ?>
-    <br><br><br><br>
-    <div style="padding: 10px;">
-    <table border="2">
-        <tr><td><center><a href="Suma_de_prefijos.php">Suma de prefijos.</a></center></td><td><center><a href="Algoritmo_de_Kadane.php">Algoritmo de Kadane.</a></center></td></tr>
-        <tr><td><center><a href="_rbol_de_Fenwick.php">Árbol de Fenwick.</a></center></td><td><center><a href="Mesa_dispersa.php">Mesa dispersa.</a></center></td></tr>
-        <tr><td><center><a href="_rbol_de_segmentos.php">Árbol de segmentos.</a></center></td></tr>
-    </table>
-    </div>
+    <a href="Concepto.php"><button class="Concepto">Concepto</button></a>
+    <a href="Suma_de_prefijos.php"><button class="Suma">Suma de prefijos</button></a>
+    <a href="Algoritmo_de_Kadane.php"><button class="Kadane">Algoritmo de Kadane</button></a>
+    <a href="_rbol_de_Fenwick.php"><button class="Fenwick">Árbol de Fenwick</button></a>
+    <a href="Mesa_dispersa.php"><button class="Mesa">Mesa dispersa</button></a>
+    <a href="_rbol_de_segmentos.php"><button class="Segmentos">Árbol de segmentos</button></a>
 </body>
 </html>

@@ -9,7 +9,7 @@
 <body>
     <?php include("Plantilla.php"); ?>
     <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
-    <h1>MESA DISPERSA.</h1>
+    <h1>MESA DISPERSA</h1>
     La mesa dispersa es una estructura de datos que nos permite hacer consultas 
     en rangos de un arreglo de varias operaciones, pero a diferencia de la suma 
     de prefijos y el árbol de Fenwick, esta no requiere que la operación hecha 
@@ -33,7 +33,7 @@
     repetiremos un bucle hasta que j sea igual a i. En este bucle veremos cuál se el mayor índice que hay en m[j] 
     que no es menor que i (se puede buscar rápido con una <a href="B_squeda_binaria.php">búsqueda binaria</a>), una 
     vez encontremos la posición k de la mesa dispera, r se volverá Operación(r, m[j][k].first) y j se volverá
-    m[j][k].second.
+    m[j][k].second. <br>
     <img src="Fotos/Mesa_dispersa.png" alt="No se pudo cargar la imagen." class="Mesa_dispersa"><br>
     Veamos un ejemplo de mesa dispersa para consultas de mínimos en rangos:
     <h4>

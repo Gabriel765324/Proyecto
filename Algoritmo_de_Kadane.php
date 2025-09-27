@@ -9,7 +9,7 @@
 <body>
     <?php include("Plantilla.php"); ?>
     <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
-    <h1>ALGORITMO DE KADANE.</h1>
+    <h1>ALGORITMO DE KADANE</h1>
     El algoritmo de Kadane nos permite calcular la suma máxima que puede tener un subarreglo entre
     todos los subarreglos de un arreglo. Este es más rápido que usar una suma de prefijos para ver cuáles
     son las sumas de cada uno de los subarreglos.

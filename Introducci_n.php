@@ -9,7 +9,7 @@
 <body>
     <?php include("Plantilla.php"); ?>
     <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
-    <center><h1 class="Ttulo">INTRODUCCIÓN.</h1></center>
+    <center><h1 class="Ttulo">INTRODUCCIÓN</h1></center>
     Bienvenido/a a compitiendo junto a C++, en esta página podrás aprender sobre temas que te ayudarán a
     aprender a usar C++ en programación competitiva.
     <h3>¿Qué es C++?</h3>

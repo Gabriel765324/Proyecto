@@ -1,48 +1,45 @@
     #include "bits/stdc++.h"<br>
     using namespace std;<br>
-    //                    0   1   2   3  4    5   6  7   8  9   10   11  12   13  14  15 16<br>
-    deque&lt;int&gt; a = {4, 287, 27, 8, 12, 228, 7, 25, 6, 17, -45, 12, 127, 98, 34, 0, 283};<br>
-    deque&lt;int&gt; _rbol(17 * 4 + 22), Propagaci_n(17 * 4 + 22, 0); //El + 22 es solo para tener un poco más y estar seguro.<br>
-    void Crear(int i, int d, int p){<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;if(i == d){ //Si el inicio es igual al final, significa que nuestro segmento tiene longitud 1.<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_rbol[p] = a[i];<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;int Promedio = (i + d) / 2;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Crear(i, Promedio, p * 2);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Crear(Promedio + 1, d, p * 2 + 1);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;_rbol[p] = _rbol[p * 2] + _rbol[p * 2 + 1]; <br>
+    deque&lt;int&gt; r, t;<br>
+    void Crear(int n){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;r.assign(n, 0);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;t.assign(n, 1);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 1; i &lt; n; i++) r[i] = i;<br>
     }<br>
-    void Propagar(int i, int d, int p){<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;_rbol[p] += Propagaci_n[p] * (d - i + 1);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;if(i != d){<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Propagaci_n[p * 2] += Propagaci_n[p];<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Propagaci_n[p * 2 + 1] += Propagaci_n[p];<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Propagaci_n[p] = 0;<br>
+    int Buscar(int a){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;if(r[a] == a) return a;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return r[a] = Buscar(r[a]); //Así también modificaremos el representante de cada nodo por el que pasemos.<br>
     }<br>
-    int Consulta(int i, int d, int p, int I, int D){<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Propagar(i, d, p);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;if(i &gt;= I and d &lt;= D) return _rbol[p]; //Vemos si nuestro rango actual está contenido en el rango de consulta.<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;if(i &gt; D or d &lt; I) return 0; //Vemos si nuestro rango está fuera del rango de consulta.<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;int Promedio = (i + d) / 2;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;return Consulta(i, Promedio, p * 2, I, D) + Consulta(Promedio + 1, d, p * 2 + 1, I, D);<br>
-    }<br>
-    void Actualizar(int i, int d, int p, int I, int D, int v){<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Propagar(i, d, p);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;if(i &gt;= I and d &lt;= D){//Vemos si nuestro rango actual está contenido en el rango de consulta.<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Propagaci_n[p] = v;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Propagar(i, d, p);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br>
+    void Unir(int a, int b){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;a = Buscar(a);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;b = Buscar(b);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;if(a != b){ //Vemos si sus representantes son diferentes.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(t[a] &gt;= t[b]){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t[a] += t[b];<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r[b] = a;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t[b] += t[a];<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r[a] = b;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
     &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;if(i &gt; D or d &lt; I) return; //Vemos si nuestro rango está fuera del rango de consulta.<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;int Promedio = (i + d) / 2;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Actualizar(i, Promedio, p * 2, I, D, v);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Actualizar(Promedio + 1, d, p * 2 + 1, I, D, v);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;_rbol[p] = _rbol[p * 2] + _rbol[p * 2 + 1];<br>
     }<br>
     int main(){<br>
     &nbsp;&nbsp;&nbsp;&nbsp;ios_base::sync_with_stdio(0);<br>
     &nbsp;&nbsp;&nbsp;&nbsp;cin.tie(0);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;int n, m;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cin&gt;&gt;n&gt;&gt;m;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Crear(n);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;deque&lt; tuple&lt;int, int, int&gt; &gt; Aristas(m);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 0; i &lt; m; i++) cin&gt;&gt;get&lt;0&gt;(Aristas[i])&gt;&gt;get&lt;1&gt;(Aristas[i])&gt;&gt;get&lt;2&gt;(Aristas[i]);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;//Es importante que el primer elemento de cada tuple sea el peso de la arista.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;sort(Aristas.begin(), Aristas.end());<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;int Peso_total = 0;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 0; i &lt; m; i++){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(Buscar(get&lt;1&gt;(Aristas[i])) != Buscar(get&lt;2&gt;(Aristas[i]))){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unir(get&lt;1&gt;(Aristas[i]), get&lt;2&gt;(Aristas[i]));<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Peso_total += get&lt;0&gt;(Aristas[i]);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;"El peso del _rbol generador m_nimo es: "&lt;&lt;Peso_total;<br>
     &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
     }
