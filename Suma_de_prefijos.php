@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suma de prefijos.</title>
+    <title>Suma de prefijos</title>
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>

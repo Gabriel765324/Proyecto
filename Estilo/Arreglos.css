@@ -154,3 +154,107 @@
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
 }
+.B_squeda_binaria{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: gold;
+    margin-top: 27.625vh;
+    margin-left: 14.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.B_squeda_binaria:hover{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 0);
+    margin-top: 27.625vh;
+    margin-left: 14.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.Programaci_n_din_mica{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: gold;
+    margin-top: 27.625vh;
+    margin-left: 64.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.Programaci_n_din_mica:hover{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 0);
+    margin-top: 27.625vh;
+    margin-left: 64.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.Prueba_de_primalidad{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: gold;
+    margin-top: 72.875vh;
+    margin-left: 14.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.Prueba_de_primalidad:hover{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 0);
+    margin-top: 72.875vh;
+    margin-left: 14.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.Aritm_tica_modular{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: gold;
+    margin-top: 72.875vh;
+    margin-left: 64.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}
+.Aritm_tica_modular:hover{
+    text-align: center;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 0);
+    margin-top: 72.875vh;
+    margin-left: 64.5vw;
+    width: 20vw;
+    height: 8vh;
+    border: 0.5vh solid white;
+    border-radius: 44px 44px 44px 44px;
+}

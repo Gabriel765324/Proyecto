@@ -25,7 +25,8 @@
     Un grafo en donde las aristas no tienen un peso asignado.
     <h3>Grafo ponderado</h3>
     Son grafos en donde cada una de las aristas tiene pesos, algo así como un costo de usarse o 
-    una longitud que tienen.
+    una longitud que tienen. <br>
+    <img src="Fotos/Tipos_de_grafos.png" alt="No se pudo cargar la imagen." class="Tipos_de_grafos">
     <h3>Componente conexo</h3>
     Es un subconjunto de nodos de un grafo no dirigido en donde se puede viajar entre cada par de nodos 
     usando solo aristas que unen nodos del componente y no pertenece a otro componente fuertemente 
@@ -37,7 +38,7 @@
     Un camino en donde ningún nodo se repite con excepción del primero nodo y el último nodo que 
     pueden o no ser el mismo.
     <h3>Ciclo</h3>
-    Un camino simple en donde el primer y el último nodo se repiten.
+    Un camino simple en donde el primer y el último nodo coinciden.
     <h3>Árbol</h3>
     Es un grafo no dirigido conexo sin ciclos. Este siempre tiene n - 1 aristas en donde n es la 
     cantidad de nodos.

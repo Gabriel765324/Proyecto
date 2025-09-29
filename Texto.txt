@@ -1,45 +1,17 @@
     #include "bits/stdc++.h"<br>
     using namespace std;<br>
-    deque&lt;int&gt; r, t;<br>
-    void Crear(int n){<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;r.assign(n, 0);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;t.assign(n, 1);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 1; i &lt; n; i++) r[i] = i;<br>
-    }<br>
-    int Buscar(int a){<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;if(r[a] == a) return a;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;return r[a] = Buscar(r[a]); //Así también modificaremos el representante de cada nodo por el que pasemos.<br>
-    }<br>
-    void Unir(int a, int b){<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;a = Buscar(a);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;b = Buscar(b);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;if(a != b){ //Vemos si sus representantes son diferentes.<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(t[a] &gt;= t[b]){<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t[a] += t[b];<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r[b] = a;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t[b] += t[a];<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r[a] = b;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+    long long m = 1000000007;<br>
+    long long Potencia(long long a, long long b){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;if(b == 0) return 1;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;if(b == 1) return a % m;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;long long r = Potencia(a, b / 2);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;r = (r % m * r % m) % m;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;if(b % 2 == 1) r = (r % m * a % m) % m;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return r % m;<br>
     }<br>
     int main(){<br>
     &nbsp;&nbsp;&nbsp;&nbsp;ios_base::sync_with_stdio(0);<br>
     &nbsp;&nbsp;&nbsp;&nbsp;cin.tie(0);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;int n, m;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;cin&gt;&gt;n&gt;&gt;m;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Crear(n);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;deque&lt; tuple&lt;int, int, int&gt; &gt; Aristas(m);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 0; i &lt; m; i++) cin&gt;&gt;get&lt;0&gt;(Aristas[i])&gt;&gt;get&lt;1&gt;(Aristas[i])&gt;&gt;get&lt;2&gt;(Aristas[i]);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;//Es importante que el primer elemento de cada tuple sea el peso de la arista.<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;sort(Aristas.begin(), Aristas.end());<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;int Peso_total = 0;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 0; i &lt; m; i++){<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(Buscar(get&lt;1&gt;(Aristas[i])) != Buscar(get&lt;2&gt;(Aristas[i]))){<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unir(get&lt;1&gt;(Aristas[i]), get&lt;2&gt;(Aristas[i]));<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Peso_total += get&lt;0&gt;(Aristas[i]);<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;"El peso del _rbol generador m_nimo es: "&lt;&lt;Peso_total;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;Potencia(2, 20);<br>
     &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
     }

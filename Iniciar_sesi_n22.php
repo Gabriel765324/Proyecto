@@ -17,9 +17,9 @@
         $Lista = $Consulta -> get_result();
         $Bien = 0;
         //$Filas = mysqli_num_rows($Conectar -> query($Consulta));
-        $Casos_de_prueba = range(1, 25);
+        $Casos_de_prueba = range(0, 9);
         shuffle($Casos_de_prueba);
-        while(sizeof($Casos_de_prueba) > 5) array_pop($Casos_de_prueba);
+        while(sizeof($Casos_de_prueba) > 3) array_pop($Casos_de_prueba);
         while($Datos = $Lista -> fetch_array()){
             $Encriptado = $Datos[3];
             //echo "<script>alert('$Filas $Correo $Contrase_a $Encriptado')</script>";
@@ -27,9 +27,9 @@
                 //echo "<script>alert('Falló la verificaión.')</script>";
                 break;
             }
-            $Casos_de_prueba = range(0, 24);
+            $Casos_de_prueba = range(0, 9);
             shuffle($Casos_de_prueba);
-            while(sizeof($Casos_de_prueba) > 5) array_pop($Casos_de_prueba);
+            while(sizeof($Casos_de_prueba) > 3) array_pop($Casos_de_prueba);
             session_start();
             $_SESSION["ID"] = $Datos[0];
             $_SESSION["Nombre"] = $Datos[1];
@@ -37,6 +37,7 @@
             $_SESSION["Problemas"] = $Datos[4];
             $_SESSION["Tiempo"] = time();
             $_SESSION["Casitos"] = $Casos_de_prueba;
+            $_SESSION["Resueltos"] = $Datos[5];
             $Bien = 1;
             break;
         }

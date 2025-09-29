@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesa dispersa.</title>
+    <title>Mesa dispersa</title>
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>

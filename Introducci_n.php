@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introducción.</title>
+    <title>Introducción</title>
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
@@ -508,7 +508,7 @@
             no se está usando.</td></tr>
         <tr><td>m.clear();</td><td>Borra todos los elementos de m.</td></tr>
         <tr><td>m.size()</td><td>Da la cantidad de llaves diferentes que están en uso.</td></tr>
-        <tr><td>m.erase(Llave)</td><td>Borra la Llave y lo que está guardando.</td></tr>
+        <tr><td>m.erase(Llave);</td><td>Borra la Llave y lo que está guardando.</td></tr>
     </table>
     Si quieres recorrer un mapa, puedes usar un for similar al que se usa con set o guardar cada 
     llave en un set. Una curiosidad es que si tratas de usar una llave que aún no está en uso, el 
