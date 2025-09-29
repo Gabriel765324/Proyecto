@@ -48,8 +48,9 @@
     La mínima cantidad de aristas que se necesitan para ir de un nodo a otro.
     <h3>Altura</h3>
     La distancia máxima entre la raíz y un nodo del árbol.
-    <h3>Diámetro</h3>
-    La distancia máxima que hay entre 2 nodos de unn grafo.
+    <h3 id="DDDD">Diámetro</h3>
+    Si consideramos las longitudes de todos los caminos más cortos entre todos los pares de nodos de 
+    un grafo no dirigido, el diámetro del grafo es igual a la mayor de esas longitudes.
     <h3>Vecino</h3>
     Un nodo conectado directamente por una arista a otro nodo.
     <h3>Representación de grafos</h3>

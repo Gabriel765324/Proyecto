@@ -20,7 +20,7 @@
     1 &le; n, q &le; 100000 <br>
     -1000000000 &le; a<sub>i</sub> &le; 1000000000 <br>
     a<sub>i</sub> &ne; 0 <br>
-    0 &le; l &le; r &le; n - 1
+    0 &le; l<sub>j</sub> &le; r<sub>j</sub> &le; n - 1
     <h3>Ejemplo de entrada</h3>
     4 <br>
     7 4 8 6 <br>

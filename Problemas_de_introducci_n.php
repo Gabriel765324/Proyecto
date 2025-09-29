@@ -9,6 +9,7 @@
 <body>
     <?php include("Plantilla.php"); ?>
     <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+        <h1>PROBLEMAS INTRODUCTORIOS</h1>
         <table border="4">
             <?php
             $Color = "red";

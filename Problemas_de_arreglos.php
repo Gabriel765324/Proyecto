@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problemas introductorios</title>
+    <title>Problemas de arreglos</title>
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
     <?php include("Plantilla.php"); ?>
     <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+        <h1>PROBLEMAS DE ARREGLOS</h1>
         <table border="4">
             <?php
             $Color = "red";

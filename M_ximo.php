@@ -19,7 +19,7 @@
     1 &le; n, q &le; 100001 <br>
     q es impar <br>
     -1000000000 &le; a<sub>i</sub> &le; 1000000000 <br>
-    0 &le; l &le; r &le; n - 1
+    0 &le; l<sub>j</sub> &le; r<sub>j</sub> &le; n - 1
     <h3>Ejemplo de entrada</h3>
     7 <br>
     7 1 4 7 8 3 6 <br>

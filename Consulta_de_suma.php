@@ -17,7 +17,7 @@
     Al final imprime la suma de las sumas obtenidas.
     <h3>Límites</h3>
     1 &le; n, q &le; 100000 <br>
-    0 &le; l &le; r &le; n - 1 <br>
+    0 &le; l<sub>j</sub> &le; r<sub>j</sub> &le; n - 1 <br>
     -100000 &le; a<sub>i</sub> &le; 100000
     <h3>Ejemplo de entrada</h3>
     4 <br>

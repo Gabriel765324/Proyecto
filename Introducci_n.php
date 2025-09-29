@@ -10,14 +10,37 @@
     <?php include("Plantilla.php"); ?>
     <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
     <center><h1 class="Ttulo">INTRODUCCIÓN</h1></center>
+    <fieldset style="margin: auto; width: 40vw; border-color: rgba(140, 255, 0, 1)">
+        <legend style="color: rgba(255, 102, 0, 1)">Índice</legend>
+        <ul>
+            <li><a href="#0">¿Qué es C++?</a></li>
+            <li><a href="#1">¿Qué es la programación competitiva?</a></li>
+            <li><a href="#2">¿Cómo veo si mi código es eficiente?</a></li>
+            <li><a href="#3">Lo básico</a></li>
+            <li><a href="#4">¿Para qué sirve usar ";"?</a></li>
+            <li><a href="#5">¿Para qué sirve usar "//" y "/* */"?</a></li>
+            <li><a href="#6">Operaciones</a></li>
+            <li><a href="#7">Variables</a></li>
+            <li><a href="#8">Entrada y salida</a></li>
+            <li><a href="#9">Condicionales</a></li>
+            <li><a href="#10">Bucles</a></li>
+            <li><a href="#11">Estructuras de datos</a></li>
+            <li><a href="#12">Vector y deque</a></li>
+            <li><a href="#13">String</a></li>
+            <li><a href="#14">Tuple</a></li>
+            <li><a href="#15">Set y multiset</a></li>
+            <li><a href="#16">Map</a></li>
+            <li><a href="#17">Funciones</a></li>
+        </ul>
+    </fieldset>
     Bienvenido/a a compitiendo junto a C++, en esta página podrás aprender sobre temas que te ayudarán a
     aprender a usar C++ en programación competitiva.
-    <h3>¿Qué es C++?</h3>
+    <h3 id="0">¿Qué es C++?</h3>
     Es el lenguaje de programación que usaremos a lo largo de este curso. <br>
-    <h3>¿Qué es la programación competitiva?</h3>
+    <h3 id="1">¿Qué es la programación competitiva?</h3>
     Es una disciplina en la que se tienen que resolver problemas usando algoritmos eficientes tanto en
     memoria como en tiempo.
-    <h3>¿Cómo veo si mi código es eficiente?</h3>
+    <h3 id="2">¿Cómo veo si mi código es eficiente?</h3>
     La notación big O permite medir la complejidad de tiempo y memoria de tu código, aunque esta 
     última no suele ser un problema. La notación big O permite saber aproximadamente cuántas
     operaciones hará tu código con relación a la entrada que se le da. Este describe esto como función. <br>
@@ -44,7 +67,7 @@
         <tr><td>O(NlogN)</td><td>1000000</td></tr>
         <tr><td>O(N)</td><td>10000000</td></tr>
     </table>
-    <h3>Lo básico.</h3>
+    <h3 id="3">Lo básico</h3>
     Para poder crear tus códigos de C++ y ejecutarlos necesitarás un editor de código y un compilador,
     hay varios que se pueden descargar desde el internet y hay algunos como
     <a href="https://www.onlinegdb.com/">Online GDB</a> que funcionan en línea.
@@ -71,10 +94,10 @@
     cerr (explicación más abajo). <br>
     return 0: Esta línea hace que la función retorne 0, poder retornar valores no es muy útil con la
     función principal, pero servirá cuando creemos nuestras propias funciones. <br>
-    <h3>¿Para qué sirve usar ";"?</h3>
+    <h3 id="4">¿Para qué sirve usar ";"?</h3>
     El ";" debe ser usado al final de la mayoría de instrucciones en C++, no hacerlo hará que el
     código no se compile correctamente; en el curso podrás ver cuando haya que hacerlo.
-    <h3>¿Para qué sirve usar "//" y "/* */"?</h3>
+    <h3 id="5">¿Para qué sirve usar "//" y "/* */"?</h3>
     Sirven para hacer comentarios, estos no se ejecutan y puedes poner palabras para hacer cosas 
     como tener un recordatorio de lo que estás haciendo. "//" hace que todo lo que está después 
     hasta el final de la línea sea un comentario y "/* */" hace que todo lo que esté entre "/*" y 
@@ -93,7 +116,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
     } 
     </h4>
-    <h3>Operaciones</h3>
+    <h3 id="6">Operaciones</h3>
     <table border="2">
         <tr><th>Operación.</th><th>Lo que hace.</th></tr>
         <tr><td>a + b</td><td>Suma a y b si son números o concatena a y b si son cadenas o caracteres.</td></tr>
@@ -116,7 +139,7 @@
         <tr><td>a != b</td><td>Da 0 si a y b son iguales y da 1 si no lo son.</td></tr>
         <tr><td>!a</td><td>Da 1 si a es falso y da 0 si a es verdadero.</td></tr>
     </table>
-    <h3>Variables</h3>
+    <h3 id="7">Variables</h3>
     En C++ se pueden crear variables locales declarándolas dentro de una función, que solo se pueden usar
     dentro de esa función, y variables globales, que se colocan afuera de las funciones y se pueden usar
     en cualquier función. Para declararlas se escribe el tipo de dato y el nombre de la variable.
@@ -184,7 +207,7 @@
     </h4>
     Ten en cuenta que al hacer divisiones con enteros el resultado se redondeará hacia abajo si la
     división no es exacta.
-    <h3>Entrada y salida</h3>
+    <h3 id="8">Entrada y salida</h3>
     Con cin puedes leer datos desde la entrada estándar y con cout puedes imprimir datos a la salida estándar. <br>
     <h4>
     #include "bits/stdc++.h"<br>
@@ -257,7 +280,7 @@
     dentro de las comillas, por ejemplo "\nHola\n" imprime un salto de línea, la palabra Hola
     y otro salto de línea) o endl (solo si estás en un problema interactivo que usa la entrada
     y salida estándar porque es más lento que "\n").
-    <h3>Condicionales</h3>
+    <h3 id="9">Condicionales</h3>
     Hay condicionales permiten que ciertas partes del código solo se ejecuten si se cumple
     o no se cumple una condición y hay uno que puede tomar valores dependiendo de si se cumple una 
     condición o no.
@@ -292,7 +315,7 @@
     estos.
     También es posible usar condicionales if, else y else if sin las llaves, pero esto hará que 
     solo ejecuten la primera orden que vean si se cumple su condición.
-    <h3>Bucles</h3>
+    <h3 id="10">Bucles</h3>
     Los bucles en C++ son while, for y do while. Puedes hacer que se detengan inmediatamente si pones break; o 
     hacer que salten directo a la siguiente iteración usando continue;. El bucle for es especial porque se le 
     dan tres cosas separadas por ; que son una orden que ejecutará antes de empezar el bucle, la condición 
@@ -331,10 +354,10 @@
     Si colocas cin>>Algo o getline(cin, Algo) en lugar de la condición del bucle puedes leer hasta el final de 
     la entrada. Esto es útil para problemas antiguos en donde no se especifica con algún valor inicial de la 
     entrada el tamaño total que va a tener.
-    <h3>Estructuras de datos</h3>
+    <h3 id="11">Estructuras de datos</h3>
     Las estructuras de datos de C++ nos permiten almacenar varios valores e includo otras estructuras de
     datos. Estas son algunas estructuras de datos. <br>
-    <h3>Vector y deque</h3>
+    <h3 id="12">Vector y deque</h3>
     Estos permiten guardar, eliminar y añadir elementos, también tienen funciones para ordenarlos de
     manera automática y buscar elementos si ya están ordenados. Vector y deque son casi lo mismo,
     pero deque tiene la ventaja de que puede añadir y eliminar elementos al inicio más eficientemente
@@ -431,11 +454,11 @@
         &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
     } 
     </h4>
-    <h3>String</h3>
+    <h3 id="13">String</h3>
     String no solo es como un tipo de dato, es similar a usar vector&lt;char&gt;. La ventaja es que también tiene 
     algunas funciones extra como s.substr(Índice, Longitud), que da la subcadena desde la posición 
     Índice con la longitud definida por Longitud.
-    <h3>Tuple</h3>
+    <h3 id="14">Tuple</h3>
     Tuple nos permite tener varios tipos de datos en un mismo lugar. Se declara como
     tuple&lt;Tipo de dato 1, Tipo de dato 2, ...&gt; Nombre;. Puedes poner cuantos tipos de datos
     quieras. Para acceder a los elementos se usa get&lt;Índice&gt;(Nombre). Veamos un ejemplo:
@@ -453,7 +476,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
     }
     </h4>
-    <h3>Set y multiset</h3>
+    <h3 id="15">Set y multiset</h3>
     Estas son estructuras de datos que permiten mantener una lista ordenada de elementos. La diferencia 
     es que set no puede tener elementos repetidos y multiset sí puede. Añadir elementos aquí tiene 
     complejidad logarítmica y no constante a diferencia de los vectores y deques. Se 
@@ -496,7 +519,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
     }
     </h4>
-    <h3>Map</h3>
+    <h3 id="16">Map</h3>
     Map permite guardar elementos bajo llaves. Para declararlo se usa map&lt;Tipo de dato de la 
     llave, Tipo de dato que guarda&gt; Nombre;. Ten en cuenta que añadir elementos a un map 
     y acceder a ellos tiene complejidad logarítmica. Veamos algunas de sus funciones, asumiendo 
@@ -543,7 +566,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
     }
     </h4>
-    <h3>Funciones</h3>
+    <h3 id="17">Funciones</h3>
     Puedes definir tus propias funciones en los códigos. Para hacerlo se debe escribir 
     Tipo de dato Nombre(Parámetro 1, Parámetro 2, ...){Función.}. Los parámetros deben 
     estar compuestos por su tipo de dato y el nombre que tendrán en la función (no es 

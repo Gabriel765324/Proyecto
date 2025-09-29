@@ -17,8 +17,8 @@
     cambia todos sus valores por v. Tu tarea es encontrar la suma de todos estos valores mínimos.
     <h3>Límites</h3>
     1 &le; n, q &le; 100000 <br>
-    -1000000000 &le; a<sub>i</sub>, v &le; 1000000000 <br>
-    0 &le; l &le; r &le; n - 1
+    -1000000000 &le; a<sub>i</sub>, v<sub>j</sub> &le; 1000000000 <br>
+    0 &le; l<sub>j</sub> &le; r<sub>j</sub> &le; n - 1
     <h3>Ejemplo de entrada</h3>
     7 <br>
     5 6 7 1 9 8 2 <br>
@@ -39,6 +39,7 @@
     En la primera consulta el subarreglo es {6, 6, 6, 6, -8, -8, -8}, guardamos el -8 y cambiamos esos valores del arreglo por -44, esto causa
     que el arreglo se vuela {-44, -44, -44, -44, -44, -44, -44}. <br>
     Al final calculamos 5 + 0 + 2 - 8 y esto nos da -1.
+    <h3>Casos y envíos</h3>
     <?php
         if(isset($_SESSION["ID"])){
     ?>
