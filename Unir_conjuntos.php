@@ -37,8 +37,8 @@
     &nbsp;&nbsp;&nbsp;&nbsp;if(r[a] == a) return a;<br>
     &nbsp;&nbsp;&nbsp;&nbsp;return r[a] = Buscar(r[a]); //Así también modificaremos el representante de cada nodo por el que pasemos.<br>
     }<br>
-    Para saber el tamaño del componente conexo de un nodo, solo usamos t[Buscar(Nodo)].
     </h4>
+    Para saber el tamaño del componente conexo de un nodo, solo usamos t[Buscar(Nodo)].
     <h3>Uniones</h3>
     Para unir 2 nodos veremos si sus representantes son los mismos para ver si ya pertenecen al mismo 
     componente conexo o no. Si es que no tienen el mismo representante, uniremos el componente 

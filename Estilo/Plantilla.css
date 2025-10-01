@@ -14,7 +14,7 @@ body{
     height: 100%;
     background: url("/Proyecto/Fotos/C++.png") no-repeat center center;
     background-size: 44vw 100vh;
-    opacity: 0.4;
+    opacity: 0.2;
     z-index: -1;
 }
 .Barra_superior{

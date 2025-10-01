@@ -10,7 +10,7 @@
     <?php include("Plantilla.php"); ?>
     <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
     <center><h1 class="Ttulo">INTRODUCCIÓN</h1></center>
-    <fieldset style="margin: auto; width: 40vw; border-color: rgba(140, 255, 0, 1)">
+    <fieldset style="margin: auto; width: 40vw; border-color: rgba(140, 255, 0, 1); background-color: rgba(116, 234, 255, 1);">
         <legend style="color: rgba(255, 102, 0, 1)">Índice</legend>
         <ul>
             <li><a href="#0">¿Qué es C++?</a></li>

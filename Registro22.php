@@ -33,7 +33,7 @@
     if($Bien == 1){
         $Progreso = str_repeat("0", 64);
         $Contrase_a = password_hash($Contrase_a, PASSWORD_DEFAULT);
-        $Consulta = $Conectar -> prepare("INSERT INTO `Usuarios` (`Nombre`, `Correo`, `Contrase_a`, `Problemas`) VALUES (?, ?, ?, ?)");
+        $Consulta = $Conectar -> prepare("INSERT INTO `Usuarios` (`Nombre`, `Correo`, `Contrase_a`, `Problemas`, `Problemas_resueltos`) VALUES (?, ?, ?, ?, 0)");
         $Consulta -> bind_param("ssss", $Nombre, $Correo, $Contrase_a, $Progreso);
         $Consulta -> execute();
         ?>

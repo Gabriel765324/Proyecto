@@ -12,7 +12,7 @@
     <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
     <h1>ORDENAR</h1>
     Se te dará un número entero n y un arreglo de n números enteros a. Tú tienes que ordenar los elementos de a de mayor a 
-    menor, multiplicar cada número por su posición (empezando del 0) e imprime la suma de los valores obtenidos. <br>
+    menor, multiplicar cada número por su posición (empezando del 0) e imprimir la suma de los valores obtenidos. <br>
     Ten en cuenta que necesitarás usar long long para que el entero no se desborde.
     <h3>Límites</h3>
     1 &le; n &le; 1000000 <br>

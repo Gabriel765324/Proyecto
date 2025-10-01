@@ -19,14 +19,13 @@ h4{
     text-align: left;
     color: green;
     background-color: black;
-    width: 800px;
     padding: 10px;
 }
 a:link{
-  color: rgb(0, 0, 238); /* azul */
+  color: rgb(0, 0, 238);
 }
 a:visited{
-  color: rgb(85, 26, 139); /* púrpura */
+  color: rgb(85, 26, 139);
 }
 th{
     text-align: center;
