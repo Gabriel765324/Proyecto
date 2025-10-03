@@ -10,7 +10,7 @@
     <?php include("Plantilla.php"); $Nombre_del_problema = "A_B.php"; $Otrito = "A_B"; $Yo = 0; ?>
     <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
     <h1>A + B</h1>
-    Se le dará a tu código un número entero a y un número entero b, debes imprimir la suma se esos 2 números.
+    Se le dará a tu código un número entero a y un número entero b, debes imprimir la suma de esos 2 números.
     <h3>Límites</h3>
     -200 &le; a, b &le; 200
     <h3>Ejemplo de entrada</h3>

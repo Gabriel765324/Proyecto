@@ -23,7 +23,7 @@
     <h3>Ejemplo de salida</h3>
     54
     <h3>Explicación</h3>
-    El arreglo ordenado de menor a mayor es 9 8 7 5 3 1, luego al multiplicar cada número por su posición sale 
+    El arreglo ordenado de mayor a menor es 9 8 7 5 3 1, luego al multiplicar cada número por su posición sale 
     9 * 0 = 0, 8 * 1 = 8, 7 * 2 = 14, 5 * 3 = 15, 3 * 4 = 12 y 1 * 5 = 5 y al sumar los números nos sale 54.
     <h3>Casos y envíos</h3>
     <?php
