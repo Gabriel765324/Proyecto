@@ -13,10 +13,10 @@
     ?>
     <div class="Tabla">
         <div class="Fila">
-            <a href="Introducci_n.php"><div class="Celda1"><br><br><br><br><br><br>Introducción a C++.</div></a>
-            <a href="Arreglos.php"><div class="Celda2"><br><br><br><br><br><br>Arreglos.</div></a>
-            <a href="Grafos.php"><div class="Celda3"><br><br><br><br><br><br>Grafos.</div></a>
-            <a href="Otros.php"><div class="Celda4"><br><br><br><br><br><br>Otros conceptos.</div></a>
+            <a href="Introducci_n.php"><div class="Celda1">Introducción a C++</div></a>
+            <a href="Arreglos.php"><div class="Celda2">Arreglos</div></a>
+            <a href="Grafos.php"><div class="Celda3">Grafos</div></a>
+            <a href="Otros.php"><div class="Celda4">Otros conceptos</div></a>
         </div>
     </div>
 </body>

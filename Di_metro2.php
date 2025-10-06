@@ -33,19 +33,45 @@
     <h3>Explicación</h3>
     La distancia más larga entre nodos del árbol es 2, distancia que hay, por ejemplo, entre los nodos 
     3 y 4.
-    <h3>Casos y envíos</h3>
+    <br>
     <?php
+        if(!isset($_SESSION["Temporizador"]) and isset($_SESSION["ID"])){
+            $_SESSION["Temporizador"] = time();
+            $_SESSION["Este_problema"] = $Yo;
+        } else if(isset($_SESSION["Este_problema"])){
+            if($_SESSION["Este_problema"] != $Yo){
+                $_SESSION["Temporizador"] = time();
+                $_SESSION["Este_problema"] = $Yo;
+            } else {
+                if(time() - 1200 >= $_SESSION["Temporizador"]){
+                    ?>
+                    <button id="Mostrador" onclick="Mostrar()">Ver solución</button>
+                    <div id="Soluci_n">
+                        <h3>Solución</h3>
+Use una <a href="B_squedas.php">búsqueda en anchura</a> en cada nodo y la respuesta será la distancia 
+más larga obtenida.
+                        <br>
+                    </div>
+                    <script>
+                        function Mostrar(){
+                        document.getElementById("Mostrador").style.display = "none";   // Ocultar botón
+                        document.getElementById("Soluci_n").style.display = "block"; // Mostrar texto
+                        }
+                    </script>
+                    <?php
+                }
+            }
+        }
         if(isset($_SESSION["ID"])){
     ?>
-    <form action="Comprobar22.php?Este_de_aqu_=<?php echo $Yo; ?>&Antes=<?php echo $Nombre_del_problema; ?>" method="post">
-        <button onclick="d0()">Descargar caso 0</button>
-        <input type="text" name="r0" required maxlength="20" autocomplete="off" placeholder="Respuesta"><br>
-        <button onclick="d1()">Descargar caso 1</button>
-        <input type="text" name="r1" required maxlength="20" autocomplete="off" placeholder="Respuesta"><br>
-        <button onclick="d2()">Descargar caso 2</button>
-        <input type="text" name="r2" required maxlength="20" autocomplete="off" placeholder="Respuesta"><br>
-        <input type="submit" value="Verificar">
-        <input type="reset" value="Borrar">
+    <form class="Formulario" action="Comprobar22.php?Este_de_aqu_=<?php echo $Yo; ?>&Antes=<?php echo $Nombre_del_problema; ?>" method="post">
+        <button onclick="d0()" class="Descarga">Descargar caso 0</button>
+        <input type="text" name="r0" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
+        <button onclick="d1()" class="Descarga">Descargar caso 1</button>
+        <input type="text" name="r1" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
+        <button onclick="d2()" class="Descarga">Descargar caso 2</button>
+        <input type="text" name="r2" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
+        <input type="submit" value="Verificar" class="Responder"> <input type="reset" value="Borrar" class="Responder">
     </form>
     <script>
     function d0(){

@@ -13,14 +13,33 @@
 .Celda1{
     display: table-cell;
     border: 0.3vw double black;
-    height: 20vh;
+    height: 21vh;
     width: 20vw;
+    box-sizing: border-box;
+    padding-top: 14.5vh;
     text-align: center;
     margin-top: 42.5vh;
     margin-left: 8.8vw;
     text-decoration: underline;
     color: blue;
-    background: url(/Proyecto/Fotos/Introducci_n.jpeg), linear-gradient(to bottom, rgb(0, 183, 255) 61%, rgb(254, 101, 101) 39%);
+    background: url(/Proyecto/Fotos/Introducci_n.jpeg), linear-gradient(to bottom, rgb(0, 183, 255) 61%, rgb(172, 254, 101) 39%);
+    background-size: 8vw 12.2vh, cover;
+    background-position: top center, top left;
+    background-repeat: no-repeat, no-repeat;
+}
+.Celda1:hover{
+    display: table-cell;
+    border: 0.3vw double black;
+    height: 21vh;
+    width: 20vw;
+    box-sizing: border-box;
+    padding-top: 14.5vh;
+    text-align: center;
+    margin-top: 42.5vh;
+    margin-left: 8.8vw;
+    text-decoration: underline;
+    color: blue;
+    background: url(/Proyecto/Fotos/Introducci_n.jpeg), linear-gradient(to bottom, rgb(0, 183, 255) 61%, rgb(110, 220, 88) 39%);
     background-size: 8vw 12.2vh, cover;
     background-position: top center, top left;
     background-repeat: no-repeat, no-repeat;
@@ -28,14 +47,33 @@
 .Celda2{
     display: table-cell;
     border: 0.3vw double black;
-    height: 20vh;
+    height: 21vh;
     width: 20vw;
+    box-sizing: border-box;
+    padding-top: 14.5vh;
     text-align: center;
     margin-top: 42.5vh;
     margin-left: 29.4vw;
     text-decoration: underline;
     color: blue;
-    background: url(/Proyecto/Fotos/Arreglos.png), linear-gradient(to bottom, rgb(0, 183, 255) 61%, rgb(254, 101, 101) 39%);
+    background: url(/Proyecto/Fotos/Arreglos.png), linear-gradient(to bottom, rgb(0, 183, 255) 61%, rgb(172, 254, 101) 39%);
+    background-size: 144px 34px, cover;
+    background-position: 50% 25%, top left;
+    background-repeat: no-repeat, no-repeat;
+}
+.Celda2:hover{
+    display: table-cell;
+    border: 0.3vw double black;
+    height: 21vh;
+    width: 20vw;
+    box-sizing: border-box;
+    padding-top: 14.5vh;
+    text-align: center;
+    margin-top: 42.5vh;
+    margin-left: 29.4vw;
+    text-decoration: underline;
+    color: blue;
+    background: url(/Proyecto/Fotos/Arreglos.png), linear-gradient(to bottom, rgb(0, 183, 255) 61%, rgb(110, 220, 88) 39%);
     background-size: 144px 34px, cover;
     background-position: 50% 25%, top left;
     background-repeat: no-repeat, no-repeat;
@@ -43,14 +81,33 @@
 .Celda3{
     display: table-cell;
     border: 0.3vw double black;
-    height: 20vh;
+    height: 21vh;
     width: 20vw;
+    box-sizing: border-box;
+    padding-top: 14.5vh;
     text-align: center;
     margin-top: 42.5vh;
     margin-left: 49.95vw;
     text-decoration: underline;
     color: blue;
-    background: url(/Proyecto/Fotos/Grafo.png), linear-gradient(to bottom, rgb(0, 183, 255) 61%, rgb(254, 101, 101) 39%);
+    background: url(/Proyecto/Fotos/Grafo.png), linear-gradient(to bottom, rgb(0, 183, 255) 61%, rgb(172, 254, 101) 39%);
+    background-size: 6vw 12.2vh, cover;
+    background-position: top center, top left;
+    background-repeat: no-repeat, no-repeat;
+}
+.Celda3:hover{
+    display: table-cell;
+    border: 0.3vw double black;
+    height: 21vh;
+    width: 20vw;
+    box-sizing: border-box;
+    padding-top: 14.5vh;
+    text-align: center;
+    margin-top: 42.5vh;
+    margin-left: 49.95vw;
+    text-decoration: underline;
+    color: blue;
+    background: url(/Proyecto/Fotos/Grafo.png), linear-gradient(to bottom, rgb(0, 183, 255) 61%, rgb(110, 220, 88) 39%);
     background-size: 6vw 12.2vh, cover;
     background-position: top center, top left;
     background-repeat: no-repeat, no-repeat;
@@ -58,14 +115,33 @@
 .Celda4{
     display: table-cell;
     border: 0.3vw double black;
-    height: 20vh;
+    height: 21vh;
     width: 20vw;
+    box-sizing: border-box;
+    padding-top: 14.5vh;
     text-align: center;
     margin-top: 42.5vh;
     margin-left: 70.5vw;
     text-decoration: underline;
     color: blue;
-    background: url(/Proyecto/Fotos/Otros.jpg), linear-gradient(to bottom, rgb(0, 183, 255) 61%, rgb(254, 101, 101) 39%);
+    background: url(/Proyecto/Fotos/Otros.jpg), linear-gradient(to bottom, rgb(0, 183, 255) 61%, rgb(172, 254, 101) 39%);
+    background-size: 8vw 12.2vh, cover;
+    background-position: top center, top left;
+    background-repeat: no-repeat, no-repeat;
+}
+.Celda4:hover{
+    display: table-cell;
+    border: 0.3vw double black;
+    height: 21vh;
+    width: 20vw;
+    box-sizing: border-box;
+    padding-top: 14.5vh;
+    text-align: center;
+    margin-top: 42.5vh;
+    margin-left: 70.5vw;
+    text-decoration: underline;
+    color: blue;
+    background: url(/Proyecto/Fotos/Otros.jpg), linear-gradient(to bottom, rgb(0, 183, 255) 61%, rgb(110, 220, 88) 39%);
     background-size: 8vw 12.2vh, cover;
     background-position: top center, top left;
     background-repeat: no-repeat, no-repeat;

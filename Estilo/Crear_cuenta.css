@@ -7,6 +7,9 @@
     margin-left: 38vw;
     height: 3vh;
     width: 24vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
 }
 .Texto_de_nombre_creado{
     margin-top: 26vh;
@@ -14,6 +17,9 @@
     height: 3vh;
     width: 14vw;
     background-color: chartreuse;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px 22px 0px 0px;
 }
 .Texto_de_correo_creado{
     margin-top: 38vh;
@@ -21,12 +27,18 @@
     height: 3vh;
     width: 14vw;
     background-color: chartreuse;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px 22px 0px 0px;
 }
 .Espacio_para_poner_el_correo_creado{
     margin-top: 41vh;
     margin-left: 38vw;
     height: 3vh;
     width: 24vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
 }
 .Texto_de_contrase_a_creada{
     margin-top: 50vh;
@@ -34,12 +46,18 @@
     height: 3vh;
     width: 14vw;
     background-color: chartreuse;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px 22px 0px 0px;
 }
 .Espacio_para_poner_la_contrase_a_creada{
     margin-top: 53vh;
     margin-left: 38vw;
     height: 3vh;
     width: 24vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
 }
 .Texto_de_contrase_a_creada2{
     margin-top: 62vh;
@@ -47,12 +65,18 @@
     height: 3vh;
     width: 14vw;
     background-color: chartreuse;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px 22px 0px 0px;
 }
 .Espacio_para_poner_la_contrase_a_creada2{
     margin-top: 65vh;
     margin-left: 38vw;
     height: 3vh;
     width: 24vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
 }
 .Bot_n_para_crear_cuenta{
     margin-top: 72.5vh;
@@ -76,18 +100,21 @@
     height: 70vh;
     width: 34vw;
     background-color: rgba(0, 191, 255, 0.546);
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
 }
 .Preguntar_por_la_cuenta{
     font-family: 'Courier New', Courier, monospace;
     margin-top: 79vh;
-    margin-left: 35vw;
-    width: 30vw;
+    margin-left: 2vw;
+    width: 96vw;
     height: 3vh;
 }
 .Enlace_de_inicio_de_sesi_n{
     font-family: 'Courier New', Courier, monospace;
     margin-top: 82vh;
-    margin-left: 43.5vw;
-    width: 14vw;
+    margin-left: 2vw;
+    width: 96vw;
     height: 3vh;
 }

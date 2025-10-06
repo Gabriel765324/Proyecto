@@ -21,6 +21,6 @@
         <input type="submit" value="Crear cuenta" class="Bot_n_para_crear_cuenta">
     </form>
     <div class="Preguntar_por_la_cuenta">¿Ya tiene una cuenta?</div>
-    <a href="Cuentas.php" class="Enlace_de_inicio_de_sesi_n">Iniciar sesión.</a>
+    <a href="Cuentas.php" class="Enlace_de_inicio_de_sesi_n">Iniciar sesión</a>
 </body>
 </html>

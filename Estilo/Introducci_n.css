@@ -56,3 +56,53 @@ table{
     width: 60vw;
     margin: auto;
 }
+.Descarga{
+    height: 4vh;
+    width: 30vw;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    background-color: chartreuse;
+}
+.Descarga:hover{
+    height: 4vh;
+    width: 30vw;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    background-color: rgb(99, 198, 0);
+}
+.Caja_de_respuesta{
+    height: 4vh;
+    width: 30vw;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+}
+.Responder{
+    height: 4vh;
+    width: 30vw;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    background-color: rgb(0, 255, 195);
+}
+.Responder:hover{
+    height: 4vh;
+    width: 30vw;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    background-color: rgb(0, 217, 167);
+}
+.Formulario{
+    text-align: center;
+}
+#Soluci_n{
+    display: none;
+}

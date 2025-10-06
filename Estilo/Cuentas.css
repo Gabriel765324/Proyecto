@@ -8,19 +8,22 @@
     height: 70vh;
     width: 34vw;
     background-color: rgba(0, 191, 255, 0.546);
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
 }
 .Preguntar_por_la_cuenta{
     font-family: 'Courier New', Courier, monospace;
     margin-top: 76vh;
-    margin-left: 35vw;
-    width: 30vw;
+    margin-left: 2vw;
+    width: 96vw;
     height: 3vh;
 }
 .Enlace_para_el_registro{
     font-family: 'Courier New', Courier, monospace;
     margin-top: 79vh;
-    margin-left: 43.5vw;
-    width: 14vw;
+    margin-left: 2vw;
+    width: 96vw;
     height: 3vh;
 }
 .Ingresar_correo{
@@ -29,12 +32,18 @@
     height: 3vh;
     width: 14vw;
     background-color: chartreuse;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px 22px 0px 0px;
 }
 .Poner_aqu__el_correo{
     margin-top: 31vh;
     margin-left: 38vw;
     height: 3vh;
     width: 24vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px 22px 22px 22px;
 }
 .Ingresar_contrase_a{
     margin-top: 46vh;
@@ -42,12 +51,18 @@
     height: 3vh;
     width: 14vw;
     background-color: chartreuse;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px 22px 0px 0px;
 }
 .Poner_aqu__la_contrase_a{
     margin-top: 49vh;
     margin-left: 38vw;
     height: 3vh;
     width: 24vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px 22px 22px 22px;
 }
 .Iniciar_sesi_n{
     margin-top: 64vh;
