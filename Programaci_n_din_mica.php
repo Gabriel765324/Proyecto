@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php include("Plantilla.php"); ?>
-    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+    <div class="Prioridad1">
     <h1>PROGRAMACIÓN DINÁMICA</h1>
     La programación dinámica es una técnica que podemos usar para encontrar soluciones a problemas eligiendo 
     la mejor solución posible para cada estado combinando las soluciones de otros estados. Para poder usar esta 
@@ -18,6 +18,7 @@
     de 2 maneras diferentes, en una usamos una función recursiva y un deque que guarde las respuestas de los 
     estados que vayamos calculando (llamada top-down) y en otra solo usamos un deque y calculamos las respuestas
     a cada estado (llamada bottom-up). Veamos algunos problemas clásicos:
+    <div class="Prioridad2">
     <h3>Mochila</h3>
     En este problema se tiene una mochila que puede llevar un peso máximo y una lista de objetos con un valor 
     y un peso. El objetivo es maximizar el valor que se puede llevar en la mochila. <br>
@@ -50,6 +51,8 @@
     y 2 de peso. Para calcular la respuesta tendríamos que llamar a esta función desde la función principal con 
     los parámetros (0, 9) representando que estamos en el primer objeto con una mochila que aún puede 
     llevar 9 de peso.
+    </div>
+    <div class="Prioridad2">
     <h3>Cambio de monedas</h3>
     Tienes monedas de varios valores y un valor. Puedes tomar cualquier cantidad de monedas de cualquier valor 
     y se te pregunta si es posible hacer que la suma de valores de monedas que tomaste sea igual al valor dado. <br>
@@ -87,6 +90,7 @@
     y aún no tomamos monedas.<br>
     La complejidad de una programación dinámica es O(n * t) en donde n es la cantidad de estados posibles y t 
     es la complejidad de nuestras transiciones.
+    </div>
     </div>
 </body>
 </html>

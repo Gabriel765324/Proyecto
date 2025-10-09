@@ -9,7 +9,7 @@
 <body>
     <?php include("Plantilla.php"); $Nombre_del_problema = "Ra_z.php"; /*Nombre.php*/
     $Otrito = "Ra_z"; /*Nombre de la carpeta*/ $Yo = 17; /*ID del problema*/ ?>
-    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+    <div class="Prioridad1">
     <h1>NOVENA RAÍZ</h1>
     Se te dará un número entero n, luego se te dará un arreglo a con n números enteros. Para cada 
     a<sub>i</sub> encuentra el mayor número entero que al elevarse a 9 no es mayor que a<sub>i</sub>.
@@ -58,13 +58,10 @@ cada número.
         if(isset($_SESSION["ID"])){
     ?>
     <form class="Formulario" action="Comprobar22.php?Este_de_aqu_=<?php echo $Yo; ?>&Antes=<?php echo $Nombre_del_problema; ?>" method="post">
-        <button onclick="d0()" class="Descarga">Descargar caso 0</button>
-        <input type="text" name="r0" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
-        <button onclick="d1()" class="Descarga">Descargar caso 1</button>
-        <input type="text" name="r1" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
-        <button onclick="d2()" class="Descarga">Descargar caso 2</button>
-        <input type="text" name="r2" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
-        <input type="submit" value="Verificar" class="Responder"> <input type="reset" value="Borrar" class="Responder">
+        <button onclick="d0()" class="Descarga">Descargar caso 0</button><input type="text" name="r0" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
+        <button onclick="d1()" class="Descarga">Descargar caso 1</button><input type="text" name="r1" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
+        <button onclick="d2()" class="Descarga">Descargar caso 2</button><input type="text" name="r2" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
+        <input type="submit" value="Verificar" class="Responder"><input type="reset" value="Borrar" class="Borrar">
     </form>
     <script>
     function d0(){

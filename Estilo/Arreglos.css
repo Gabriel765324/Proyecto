@@ -10,6 +10,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .Concepto:hover{
     text-align: center;
@@ -23,6 +24,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .Suma{
     text-align: center;
@@ -36,6 +38,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .Suma:hover{
     text-align: center;
@@ -49,6 +52,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .Kadane{
     text-align: center;
@@ -62,6 +66,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .Kadane:hover{
     text-align: center;
@@ -75,6 +80,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .Fenwick{
     text-align: center;
@@ -88,6 +94,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .Fenwick:hover{
     text-align: center;
@@ -101,6 +108,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .Mesa{
     text-align: center;
@@ -114,6 +122,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .Mesa:hover{
     text-align: center;
@@ -127,6 +136,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .Segmentos{
     text-align: center;
@@ -140,6 +150,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .Segmentos:hover{
     text-align: center;
@@ -153,6 +164,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .B_squeda_binaria{
     text-align: center;
@@ -166,6 +178,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .B_squeda_binaria:hover{
     text-align: center;
@@ -179,6 +192,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .Programaci_n_din_mica{
     text-align: center;
@@ -192,6 +206,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .Programaci_n_din_mica:hover{
     text-align: center;
@@ -205,6 +220,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .Prueba_de_primalidad{
     text-align: center;
@@ -218,6 +234,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .Prueba_de_primalidad:hover{
     text-align: center;
@@ -231,6 +248,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .Aritm_tica_modular{
     text-align: center;
@@ -244,6 +262,7 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }
 .Aritm_tica_modular:hover{
     text-align: center;
@@ -257,4 +276,5 @@
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
 }

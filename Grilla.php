@@ -9,7 +9,7 @@
 <body>
     <?php include("Plantilla.php"); $Nombre_del_problema = "Grilla.php"; /*Nombre.php*/
     $Otrito = "Grilla"; /*Nombre de la carpeta*/ $Yo = 16; /*ID del problema*/ ?>
-    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+    <div class="Prioridad1">
     <h1>GRILLA</h1>
     Se te dará un número entero n y una grilla con n filas y n columnas. Cada posición de la grilla 
     tiene un costo c que se tiene que pagar al pasar por esa casilla. Tu tarea es ir de la esquina 
@@ -55,13 +55,10 @@ usar long long.
         if(isset($_SESSION["ID"])){
     ?>
     <form class="Formulario" action="Comprobar22.php?Este_de_aqu_=<?php echo $Yo; ?>&Antes=<?php echo $Nombre_del_problema; ?>" method="post">
-        <button onclick="d0()" class="Descarga">Descargar caso 0</button>
-        <input type="text" name="r0" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
-        <button onclick="d1()" class="Descarga">Descargar caso 1</button>
-        <input type="text" name="r1" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
-        <button onclick="d2()" class="Descarga">Descargar caso 2</button>
-        <input type="text" name="r2" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
-        <input type="submit" value="Verificar" class="Responder"> <input type="reset" value="Borrar" class="Responder">
+        <button onclick="d0()" class="Descarga">Descargar caso 0</button><input type="text" name="r0" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
+        <button onclick="d1()" class="Descarga">Descargar caso 1</button><input type="text" name="r1" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
+        <button onclick="d2()" class="Descarga">Descargar caso 2</button><input type="text" name="r2" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
+        <input type="submit" value="Verificar" class="Responder"><input type="reset" value="Borrar" class="Borrar">
     </form>
     <script>
     function d0(){

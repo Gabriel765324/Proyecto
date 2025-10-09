@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php include("Plantilla.php"); ?>
-    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+    <div class="Prioridad1">
     <h1>PUENTES Y PUNTOS DE ARTICULACIÓN</h1>
     En un grafo no dirigido conexo, un puente es una arista que al ser removida causaría que el 
     grafo deje de ser conexo y un punto de articulación es un nodo que al ser removido cuasaría 

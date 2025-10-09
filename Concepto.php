@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php include("Plantilla.php"); ?>
-    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+    <div class="Prioridad1">
     <h1>ARREGLOS</h1>
     Los arreglos son listas de elementos en donde el orden sí importa a diferencia de los conjuntos. <br>
     Los problemas de arreglos suelen pedirte hacer cosas variadas con estos como determinar el 

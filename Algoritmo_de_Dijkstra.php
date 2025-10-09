@@ -8,11 +8,12 @@
 </head>
 <body>
     <?php include("Plantilla.php"); ?>
-    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+    <div class="Prioridad1">
     <h1>ALGORITMO DE DIJKSTRA</h1>
     El algoritmo de Dijkstra nos permite encontrar los caminos más cortos de un nodo hacia los demás 
     nodos y las distancias de esos caminos, pero a diferencia de la búsqueda en anchura, este también 
     funciona en grafos no ponderados con aristas sin pesos negativos.
+    <div class="Prioridad2">
     <h3>¿Cómo funciona?</h3>
     Es bastante similar a una búsqueda en profundidad, la diferencia es que la fila ordena sus 
     nodos por distancia para saber cuál es el siguiente nodo que se debe revisar. Usaremos esta 
@@ -37,6 +38,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
     &nbsp;&nbsp;&nbsp;&nbsp;}<br>
     </h4>
+    </div>
     Es importante que los elemenos first de la fila sean las distancias para que el set les dé prioridad 
     en lugar de a los índices de los nodos. La complejidad del algoritmo de Dijkstra es O((n + e) log n)
     en donde n es el tamaño del grafo y e es el número de aristas.

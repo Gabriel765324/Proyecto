@@ -7,10 +7,13 @@
     margin-left: 33vw;
     height: 70vh;
     width: 34vw;
-    background-color: rgba(0, 191, 255, 0.546);
-    border-style: solid;
+    background-color: rgba(0, 191, 255, 1);
+    border-style: double;
+    border-width: 10px;
+    box-sizing: border-box;
     border-color: black;
     border-radius: 22px;
+    box-shadow: 0px 10px 10px black;
 }
 .Preguntar_por_la_cuenta{
     font-family: 'Courier New', Courier, monospace;
@@ -35,6 +38,7 @@
     border-style: solid;
     border-color: black;
     border-radius: 22px 22px 0px 0px;
+    box-shadow: 0px 10px 10px black;
 }
 .Poner_aqu__el_correo{
     margin-top: 31vh;
@@ -44,6 +48,8 @@
     border-style: solid;
     border-color: black;
     border-radius: 22px 22px 22px 22px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px black;
 }
 .Ingresar_contrase_a{
     margin-top: 46vh;
@@ -54,6 +60,7 @@
     border-style: solid;
     border-color: black;
     border-radius: 22px 22px 0px 0px;
+    box-shadow: 0px 10px 10px black;
 }
 .Poner_aqu__la_contrase_a{
     margin-top: 49vh;
@@ -63,6 +70,8 @@
     border-style: solid;
     border-color: black;
     border-radius: 22px 22px 22px 22px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px black;
 }
 .Iniciar_sesi_n{
     margin-top: 64vh;
@@ -71,6 +80,11 @@
     width: 10vw;
     background-color: rgb(248, 178, 16);
     border-radius: 22px 22px 22px 22px;
+    border-style: groove;
+    border-color: aquamarine;
+    border-width: 3px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px black;
 }
 .Iniciar_sesi_n:hover{
     margin-top: 64vh;
@@ -79,4 +93,9 @@
     width: 10vw;
     background-color: rgb(255, 255, 0);
     border-radius: 22px 22px 22px 22px;
+    border-style: groove;
+    border-color: aquamarine;
+    border-width: 3px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px black;
 }

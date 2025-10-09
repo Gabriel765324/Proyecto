@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php include("Plantilla.php"); ?>
-    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+    <div class="Prioridad1">
     <h1>MESA DISPERSA</h1>
     La mesa dispersa es una estructura de datos que nos permite hacer consultas 
     en rangos de un arreglo de varias operaciones, pero a diferencia de la suma 
@@ -16,10 +16,13 @@
     tenga un inverso. La desventaja que tiene frente al árbol de Fenwick es que 
     tiene que actualizarse por completo si se modifica un valor, por lo cual no 
     se puede usar en problemas que requieran actualizaciones.
+    <div class="Prioridad2">
     <h3>¿Cómo funciona?</h3>
     La mesa dispersa guarda para cada posición del arreglo el resultado de cada una 
     de las consultas en rangos con una longitud que es una potencia de 2 + 1 y tienen a
     esa posición como último elemento.
+    </div>
+    <div class="Prioridad2">
     <h3>Creación</h3>
     Para explicar la implementación asumamos que nuestra mesa dispersa se llama m y nuestro arreglo se llama a. <br>
     Para crear m iniciamos a iterar por el arreglo. Si estamos en la posición i, añadimos {a[i], i} a m[i], 
@@ -28,6 +31,8 @@
     de m[j]; cambiamos r a Operación(r, m[j][k + 1].first), cambiamos j a m[j][k + 1].second y añadimos {r, j} a m[i]; pero 
     si k + 1 no es una posición de m[j], significa que terminamos de crear m[i] y podemos pasar a la siguiente 
     posición del arreglo a.
+    </div>
+    <div class="Prioridad2">
     <h3>Consultas</h3>
     Si queremos hacer una consulta del rango [i, j], empezaremos creando una variable r que empezará siendo a[j] y 
     repetiremos un bucle hasta que j sea igual a i. En este bucle veremos cuál se el mayor índice que hay en m[j] 
@@ -84,6 +89,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
     }
     </h4>
+    </div>
     La implementación podría variar un poco si queres hacer cosas como encontrar una suma. La complejidad de la mesa 
     dispersa para un arreglo de tamaño n es O(n log n) para la creación y O(log log n) por consulta, tener consultas 
     tan rápidas permite combinar la mesa dispersa con otras cosas como búsquedas binarias para evitar que la complejidad 

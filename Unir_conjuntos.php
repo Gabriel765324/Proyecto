@@ -8,13 +8,16 @@
 </head>
 <body>
     <?php include("Plantilla.php"); ?>
-    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+    <div class="Prioridad1">
     <h1>UNIÓN DE CONJUNTOS DISJUNTOS</h1>
     Esta es un estructura de datos que nos permite saber de manera eficiente el componente conexo en el 
     que está un nodo y el tamaño de ese componente permitiendo actualizaciones en las que se unen 
     dos nodos con una arista.
+    <div class="Prioridad2">
     <h3>¿Cómo funciona?</h3>
     Para cada nodo guarda un representante del componente conexo y el tamaño de ese componente.
+    </div>
+    <div class="Prioridad2">
     <h3>Creación</h3>
     Creamos un deque que llamaremos r en donde cada nodo empiece siendo su propio representante y 
     otro deque t de números 1 para representar que cada componente conexo es de tamaño 1.
@@ -26,6 +29,8 @@
     &nbsp;&nbsp;&nbsp;&nbsp;for(int i = 1; i &lt; n; i++) r[i] = i;<br>
     }<br>
     </h4>
+    </div>
+    <div class="Prioridad2">
     <h3>Consultas</h3>
     Cuando queramos saber el representante de un nodo usaremos una función recursiva que solo tendrá 
     un parámetro que será el nodo actual a la que llamaremos con nuestro nodo de consulta. Esta 
@@ -39,6 +44,8 @@
     }<br>
     </h4>
     Para saber el tamaño del componente conexo de un nodo, solo usamos t[Buscar(Nodo)].
+    </div>
+    <div class="Prioridad2">
     <h3>Uniones</h3>
     Para unir 2 nodos veremos si sus representantes son los mismos para ver si ya pertenecen al mismo 
     componente conexo o no. Si es que no tienen el mismo representante, uniremos el componente 
@@ -60,6 +67,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;}<br>
     }<br>
     </h4>
+    </div>
     La complejidad de la creación de esta estructura de datos es O(n) donde n 
     es la cantidad de nodos y la complejidad de cada operación es O(1) en práctica, pero más 
     exactamente es O(&alpha;(n)), pero &alpha; es la función inversa de la función de 

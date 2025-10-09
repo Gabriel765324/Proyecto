@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php include("Plantilla.php"); ?>
-    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+    <div class="Prioridad1">
     <h1>ÁRBOL DE FENWICK</h1>
     Como vimos antes, sacar la suma de un subarreglo eficientemente es fácil con una suma de prefijos, ¿pero qué
     pasaría si se tuviera que modificar algún valor del arreglo? Tendríamos que modificar todos los valores
@@ -16,10 +16,13 @@
     causa que la suma de prefijos sea lenta si se modifican muchos valores. <br>
     El árbol de Fenwick es un poco más lento respondiendo a consultas con una complejidad logarítmica, pero puede 
     actualizar elementos mucho más rápidamente con una complejidad logarítmica.
+    <div class="Prioridad2">
     <h3>¿Cómo funciona?</h3>
     Básicamente hacemos que cada elemento de un arreglo guarde la suma de un rango específico del arreglo del cual 
     se quiere construir el árbol de Fenwick como se puede ver en la imagen. <br>
     <img src="Fotos/_rbol_de_Fenwick.png" alt="No se pudo cargar la imagen." class="_rbol_de_Fenwick">
+    </div>
+    <div class="Prioridad2">
     <h3>Creación</h3>
     No hay que preocuparse de tratar de pensar mucho en cómo crear los rangos porque también existe 
     la operación LSOne para ayudarnos. En C++ la podemos crear con una función que convierta a n en n & -n.
@@ -27,12 +30,16 @@
     dejaremos la posición 0 vacía) e iteraremos sobre el arreglo del cual queremos obtener su árbol de Fenwick.
     Para simplicidad llamaremos al arreglo a y al árbol lo llamaremos f. Cuando estamos en la posición i de a, 
     añadimos a[i] a f[i + 1] y a f[i + 1 + LSOne(i + 1)] si es que esta posición existe en f.
+    </div>
+    <div class="Prioridad2">
     <h3>Consultas</h3>
     Para hacer
     consultas de sumas del rango [i, j] nos aseguramos de que i sea 0 (caso contrario, la respuesta a la
     consulta será la consulta del rango [0, j] menos la respuesta del rango [0, i - 1]). Nosotros empezamos
     con un contador que empieza en 0 y un índice que empieza en j + 1. Iremos añadiendo el valor de f[Índice] 
     a contador y restando LSOne(Índice) a Índice hasta que se vuelva 0 (en cuyo caso, habremos terminado).
+    </div>
+    <div class="Prioridad2">
     <h3>Actualizaciones</h3>
     Para 
     reemplazar un valor de a[i] por v, obtendremos v - a[i], sumaremos 1 a i e iremos sumando esta diferencia 
@@ -77,6 +84,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
     }
     </h4>
+    </div>
     Como ya se mencionó, las consultas y las actualizaciones en el árbol de Fenwick tienen complejidad O(log n)
     donde n es el tamaño del arreglo original y su creación se hace en O(n). Esto es mucho más rápido que 
     una suma de prefijos porque, si bien su creación es igual de eficiente y sus consultas son más eficientes,

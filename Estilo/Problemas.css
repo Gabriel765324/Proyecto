@@ -26,6 +26,8 @@
     background-size: 8vw 12.2vh, cover;
     background-position: top center, top left;
     background-repeat: no-repeat, no-repeat;
+    box-shadow: 0px 10px 10px black;
+    border-radius: 22px;
 }
 .Celda1:hover{
     display: table-cell;
@@ -43,6 +45,8 @@
     background-size: 8vw 12.2vh, cover;
     background-position: top center, top left;
     background-repeat: no-repeat, no-repeat;
+    box-shadow: 0px 10px 10px black;
+    border-radius: 22px;
 }
 .Celda2{
     display: table-cell;
@@ -60,6 +64,8 @@
     background-size: 144px 34px, cover;
     background-position: 50% 25%, top left;
     background-repeat: no-repeat, no-repeat;
+    box-shadow: 0px 10px 10px black;
+    border-radius: 22px;
 }
 .Celda2:hover{
     display: table-cell;
@@ -77,6 +83,8 @@
     background-size: 144px 34px, cover;
     background-position: 50% 25%, top left;
     background-repeat: no-repeat, no-repeat;
+    box-shadow: 0px 10px 10px black;
+    border-radius: 22px;
 }
 .Celda3{
     display: table-cell;
@@ -94,6 +102,8 @@
     background-size: 6vw 12.2vh, cover;
     background-position: top center, top left;
     background-repeat: no-repeat, no-repeat;
+    box-shadow: 0px 10px 10px black;
+    border-radius: 22px;
 }
 .Celda3:hover{
     display: table-cell;
@@ -111,6 +121,8 @@
     background-size: 6vw 12.2vh, cover;
     background-position: top center, top left;
     background-repeat: no-repeat, no-repeat;
+    box-shadow: 0px 10px 10px black;
+    border-radius: 22px;
 }
 .Celda4{
     display: table-cell;
@@ -128,6 +140,8 @@
     background-size: 8vw 12.2vh, cover;
     background-position: top center, top left;
     background-repeat: no-repeat, no-repeat;
+    box-shadow: 0px 10px 10px black;
+    border-radius: 22px;
 }
 .Celda4:hover{
     display: table-cell;
@@ -145,6 +159,8 @@
     background-size: 8vw 12.2vh, cover;
     background-position: top center, top left;
     background-repeat: no-repeat, no-repeat;
+    box-shadow: 0px 10px 10px black;
+    border-radius: 22px;
 }
 .Clasificaci_n{
     text-align: center;
@@ -152,12 +168,14 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     background-color: gold;
-    margin-top: 10vh;
+    margin-top: 11vh;
     margin-left: 39.5vw;
     width: 20vw;
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
+    border-radius: 22px;
 }
 .Clasificaci_n:hover{
     text-align: center;
@@ -165,10 +183,12 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     background-color: rgb(255, 255, 0);
-    margin-top: 10vh;
+    margin-top: 11vh;
     margin-left: 39.5vw;
     width: 20vw;
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 10px 10px black;
+    border-radius: 22px;
 }

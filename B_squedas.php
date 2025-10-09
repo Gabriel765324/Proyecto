@@ -8,9 +8,10 @@
 </head>
 <body>
     <?php include("Plantilla.php"); ?>
-    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+    <div class="Prioridad1">
     <h1>BÚSQUEDA EN PROFUNDIDAD Y BÚSQUEDA EN ANCHURA</h1>
     Estos 2 algoritmos nos permiten recorrer grafos de diferentes maneras.
+    <div class="Prioridad2">
     <h3>Búsqueda en profundidad</h3>
     Con la búsqueda en profundidad empezaremos en un nodo cualquiera, cada vez que estemos en un nodo 
     iremos a un nodo cualquiera que no hayamos visitado antes o regresaremos al anterior si es que ya 
@@ -24,6 +25,8 @@
     &nbsp;&nbsp;&nbsp;&nbsp;for(auto E: Grafo[Nodo]) if(!Visitados[E]) DFS(E); //Llamamos a la función para cada nodo no visitado.<br>
     }<br>
     </h4>
+    </div>
+    <div class="Prioridad2">
     <h3>Búsqueda en anchura</h3>
     En esta búsqueda nosotros recorreremos el grafo por capas. Necesitaremos una fila que representaremos 
     con un deque que al inicio tenga un nodo que escogeremos como inicio, luego repetiremos un bucle 
@@ -46,7 +49,10 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
     &nbsp;&nbsp;&nbsp;&nbsp;}<br>
     </h4>
+    </div>
+    <div class="Prioridad2">
     <h3>Aplicaciones</h3>
+    <div class="Prioridad3">
     <h3>Ordenamiento topológico</h3>
     El ordenamiento topológico de un grafo dirigido consiste en encontrar una asignación de valores 
     a cada nodo en donde si la arista que conecta los nodos a y b existe, entonces a tiene un mayor valor 
@@ -62,6 +68,8 @@
     &nbsp;&nbsp;&nbsp;&nbsp;c++;<br>
     }<br>
     </h4>
+    </div>
+    <div class="Prioridad3">
     <h3>Detectar ciclos</h3>
     Con una búsqueda en anchura podemos determinar si un grafo tiene ciclos. <br>
     En el caso de un grafo 
@@ -96,6 +104,8 @@
     &nbsp;&nbsp;&nbsp;&nbsp;return r;<br>
     }<br>
     </h4>
+    </div>
+    <div class="Prioridad3">
     <h3>Camino más corto</h3>
     Con la búsqueda en anchura podemos determinar el camino más corto entre un nodo y todos los 
     demás nodos en un grafo no ponderado y las longitudes de cada uno de esos caminos. 
@@ -129,6 +139,8 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Camino.push_front(i);<br>
     &nbsp;&nbsp;&nbsp;&nbsp;}<br>
     </h4>
+    </div>
+    </div>
     La complejidad de ambos algoritmos es de O(n + e) en donde n es el número de nodos y e es el número 
     de aristas.
     </div>

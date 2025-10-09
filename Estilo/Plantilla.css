@@ -26,6 +26,7 @@ body{
     width: 100vw;
     height: 9.5vh;
     border: 0px solid black;
+    box-shadow: 0px 2px 2px black;
 }
 .Inicio{
     text-align: center;
@@ -39,6 +40,7 @@ body{
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 5px 5px black;
 }
 .Inicio:hover{
     text-align: center;
@@ -52,6 +54,7 @@ body{
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 5px 5px black;
 }
 .Cursos{
     text-align: center;
@@ -65,6 +68,7 @@ body{
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 5px 5px black;
 }
 .Cursos:hover{
     text-align: center;
@@ -78,6 +82,7 @@ body{
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 5px 5px black;
 }
 .Problemas{
     text-align: center;
@@ -91,6 +96,7 @@ body{
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 5px 5px black;
 }
 .Problemas:hover{
     text-align: center;
@@ -104,6 +110,7 @@ body{
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 5px 5px black;
 }
 .Cuentas{
     text-align: center;
@@ -117,6 +124,7 @@ body{
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 5px 5px black;
 }
 .Cuentas:hover{
     text-align: center;
@@ -130,6 +138,7 @@ body{
     height: 8vh;
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
+    box-shadow: 0px 5px 5px black;
 }
 .Perfil{
     text-align: center;
@@ -144,6 +153,7 @@ body{
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
     padding: 0px;
+    box-shadow: 0px 5px 5px black;
 }
 .Perfil:hover{
     text-align: center;
@@ -158,4 +168,5 @@ body{
     border: 0.5vh solid white;
     border-radius: 44px 44px 44px 44px;
     padding: 0px;
+    box-shadow: 0px 5px 5px black;
 }

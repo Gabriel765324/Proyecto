@@ -9,7 +9,7 @@
 <body>
     <?php include("Plantilla.php"); $Nombre_del_problema = "Suma_mayor.php"; /*Nombre.php*/
     $Otrito = "Suma_mayor"; /*Nombre de la carpeta*/ $Yo = 5; /*ID del problema*/ ?>
-    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+    <div class="Prioridad1">
     <h1>SUMA MÁXIMA EN CADA PREFIJO</h1>
     Se te da un número entero n y un arreglo a de n elementos. Para cada i tal que 1 &le; i &le; n
     considera el subarreglo b de a de sus primeros i elementos, para cada b tienes que encontrar la suma máxima
@@ -58,13 +58,10 @@ la suma máxima que tenga en cada posición del arreglo. No olvide usar long lon
         if(isset($_SESSION["ID"])){
     ?>
     <form class="Formulario" action="Comprobar22.php?Este_de_aqu_=<?php echo $Yo; ?>&Antes=<?php echo $Nombre_del_problema; ?>" method="post">
-        <button onclick="d0()" class="Descarga">Descargar caso 0</button>
-        <input type="text" name="r0" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
-        <button onclick="d1()" class="Descarga">Descargar caso 1</button>
-        <input type="text" name="r1" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
-        <button onclick="d2()" class="Descarga">Descargar caso 2</button>
-        <input type="text" name="r2" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
-        <input type="submit" value="Verificar" class="Responder"> <input type="reset" value="Borrar" class="Responder">
+        <button onclick="d0()" class="Descarga">Descargar caso 0</button><input type="text" name="r0" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
+        <button onclick="d1()" class="Descarga">Descargar caso 1</button><input type="text" name="r1" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
+        <button onclick="d2()" class="Descarga">Descargar caso 2</button><input type="text" name="r2" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
+        <input type="submit" value="Verificar" class="Responder"><input type="reset" value="Borrar" class="Borrar">
     </form>
     <script>
     function d0(){

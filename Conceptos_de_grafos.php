@@ -8,51 +8,80 @@
 </head>
 <body>
     <?php include("Plantilla.php"); ?>
-    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+    <div class="Prioridad1">
     <h1>GRAFOS</h1>
     Los grafos son conjuntos de nodos que se pueden unir con aristas. Puedes pensar el nodos como si 
     fueran ciudades y en las aristas como las carreteras que unen esas ciudades. En los problemas de 
     grafo te pueden pedir varias cosas para hacer en en grafo como hallar distancias entre nodos
     ver alguna manera de unir o separar nodos para lograr que algo se cumpla, etcétera.<br>
-    En esta página veremos algunos conceptos que te servirán. <br>
+    En esta página veremos algunos conceptos que te servirán.
+    <div class="Prioridad2">
     <h3>Grafo no dirigido</h3>
     Son grafos en donde todas sus aristas son bidireccionales, o sea que se pueden recorrer en 
     sus 2 sentidos.
+    </div>
+    <div class="Prioridad2">
     <h3>Grafo dirigido</h3>
     Son grafos en donde todas sus aristas son unidireccionales, o sea que se pueden recorrer en 
     solo 1 de sus sentidos.
+    </div>
+    <div class="Prioridad2">
     <h3>Grafo no ponderado</h3>
     Un grafo en donde las aristas no tienen un peso asignado.
+    </div>
+    <div class="Prioridad2">
     <h3>Grafo ponderado</h3>
     Son grafos en donde cada una de las aristas tiene pesos, algo así como un costo de usarse o 
     una longitud que tienen. <br>
     <img src="Fotos/Tipos_de_grafos.png" alt="No se pudo cargar la imagen." class="Tipos_de_grafos">
+    </div>
+    <div class="Prioridad2">
     <h3>Componente conexo</h3>
     Es un subconjunto de nodos de un grafo no dirigido en donde se puede viajar entre cada par de nodos 
     usando solo aristas que unen nodos del componente y no pertenece a otro componente fuertemente 
     conexo más grande.
+    </div>
+    <div class="Prioridad2">
     <h3>Camino</h3>
     Es una lista de nodos a<sub>0</sub>, a<sub>1</sub>, ..., a<sub>n - 1</sub> en donde los nodos 
     a<sub>i</sub> y a<sub>i - 1</sub> están unidos por una arista.
+    </div>
+    <div class="Prioridad2">
     <h3>Camino simple</h3>
     Un camino en donde ningún nodo se repite con excepción del primero nodo y el último nodo que 
     pueden o no ser el mismo.
+    </div>
+    <div class="Prioridad2">
     <h3>Ciclo</h3>
     Un camino simple en donde el primer y el último nodo coinciden.
+    </div>
+    <div class="Prioridad2">
     <h3>Árbol</h3>
     Es un grafo no dirigido conexo sin ciclos. Este siempre tiene n - 1 aristas en donde n es la 
     cantidad de nodos.
+    </div>
+    <div class="Prioridad2">
     <h3>Raíz</h3>
     Es un nodo especial definido por nosotros.
+    </div>
+    <div class="Prioridad2">
     <h3>Distancia</h3>
     La mínima cantidad de aristas que se necesitan para ir de un nodo a otro.
+    </div>
+    <div class="Prioridad2">
     <h3>Altura</h3>
     La distancia máxima entre la raíz y un nodo del árbol.
+    </div>
+    <div class="Prioridad2">
     <h3 id="DDDD">Diámetro</h3>
     Si consideramos las longitudes de todos los caminos más cortos entre todos los pares de nodos de 
     un grafo no dirigido, el diámetro del grafo es igual a la mayor de esas longitudes.
+    </div>
+    <div class="Prioridad2">
     <h3>Vecino</h3>
     Un nodo conectado directamente por una arista a otro nodo.
+    </div>
+    <div class="Prioridad2">
     <h3>Representación de grafos</h3>
     En C++ tenemos 3 opciones a la hora de representar grafos: la lista de aristas, la lista de adyacencia 
     y la matriz de adyacencia, pero aquí solo se usará la lista de adyacencia porque las otras 2 
@@ -79,6 +108,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
     }
     </h4>
+    </div>
     </div>
 </body>
 </html>

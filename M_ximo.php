@@ -9,7 +9,7 @@
 <body>
     <?php include("Plantilla.php"); $Nombre_del_problema = "M_ximo.php"; /*Nombre.php*/
     $Otrito = "M_ximo"; /*Nombre*/ $Yo = 7; /*ID del problema*/ ?>
-    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+    <div class="Prioridad1">
     <h1>MÁXIMO EN UN RANGO Y MEDIO MÁXIMO</h1>
     Se te dará un número entero n y un arreglo a con n números enteros, luego se te dará un número q y 
     a continuación se te darán q pares de números l y r. Por cada par (l, r) considera el subarreglo
@@ -66,13 +66,10 @@ imprima el resultado del medio.
         if(isset($_SESSION["ID"])){
     ?>
     <form class="Formulario" action="Comprobar22.php?Este_de_aqu_=<?php echo $Yo; ?>&Antes=<?php echo $Nombre_del_problema; ?>" method="post">
-        <button onclick="d0()" class="Descarga">Descargar caso 0</button>
-        <input type="text" name="r0" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
-        <button onclick="d1()" class="Descarga">Descargar caso 1</button>
-        <input type="text" name="r1" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
-        <button onclick="d2()" class="Descarga">Descargar caso 2</button>
-        <input type="text" name="r2" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
-        <input type="submit" value="Verificar" class="Responder"> <input type="reset" value="Borrar" class="Responder">
+        <button onclick="d0()" class="Descarga">Descargar caso 0</button><input type="text" name="r0" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
+        <button onclick="d1()" class="Descarga">Descargar caso 1</button><input type="text" name="r1" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
+        <button onclick="d2()" class="Descarga">Descargar caso 2</button><input type="text" name="r2" required maxlength="20" autocomplete="off" placeholder="Respuesta" class="Caja_de_respuesta"><br>
+        <input type="submit" value="Verificar" class="Responder"><input type="reset" value="Borrar" class="Borrar">
     </form>
     <script>
     function d0(){

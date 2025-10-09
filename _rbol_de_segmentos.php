@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php include("Plantilla.php"); ?>
-    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+    <div class="Prioridad1">
     <h1>ÁRBOL DE SEGMENTOS</h1>
     El árbol de segmentos es una estructura de datos que permite responer a consultas en rangos de un arreglo. <br>
     Las ventajas que tiene sobre el árbol de Fenwick son que no reuiere que la operación que haga tenga un inverso 
@@ -16,12 +16,15 @@
     la mesa dispersa son que ocupa menos memoria y que puede actualizarse. <br>
     La desventaja que tiene frente al árbol de Fenwick es que ocupa más memoria y la desventaja que tiene frente 
     a la mesa dispersa es tener consultas más lentas.
+    <div class="Prioridad2">
     <h3>¿Cómo funciona?</h3>
     El árbol de segmentos funciona combinando las respuestas de segmentos de tamaños cada vez mayores para así 
     poder responder a consultas combinando segmentos ya calculados. Sus actualizaciones son rápidas porque 
     al actualizar un valor o valores solo hay que modificar los segmentos que usan el o los valores modificados 
     en lugar de todos los segmentos. <br>
     <img src="Fotos/_rbol_de_segmentos.png" alt="No se pudo cargar la imagen" class="_rbol_de_segmentos">
+    </div>
+    <div class="Prioridad2">
     <h3>Creación</h3>
     Primero necesitamos el arreglo original al que llamaremos a y un arreglo que represente el árbol de segmentos 
     que llamaremos _rbol (en C++ las varibles no pueden tener nombres con algunos caracteres como letras con tilde)
@@ -50,6 +53,8 @@
     &nbsp;&nbsp;&nbsp;&nbsp;Crear(Promedio + 1, d, p * 2 + 1);<br>
     &nbsp;&nbsp;&nbsp;&nbsp;_rbol[p] = _rbol[p * 2] + _rbol[p * 2 + 1]; <br>
     }<br>
+    </div>
+    <div class="Prioridad2">
     <h3>Consultas</h3>
     Para responder consultas debemos combinar los rangos que tenemos de manera eficiente. Para ello bajaremos por 
     el árbol de manera similar a la manera en la que lo creamos. <br>
@@ -69,6 +74,8 @@
     &nbsp;&nbsp;&nbsp;&nbsp;return Consulta(i, Promedio, p * 2, I, D) + Consulta(Promedio + 1, d, p * 2 + 1, I, D);<br>
     }<br>
     </h4>
+    </div>
+    <div class="Prioridad2">
     <h3>Actualizaciones</h3>
     Para actualizar un solo elemento de un árbol de segmentos se necesita hacer una función similar a la de 
     consulta, solo que también necesita el parámetro de la modificación. Para usar esta función en el código la 
@@ -92,6 +99,8 @@
     ser una única variable que representa la única posición a actualizar. Para actualizar rangos usaremos una
     técnica llamada propagación floja que consiste en aplicar el cambio a todo un rango si llegamos a este y solo 
     modificar los valores que le siguen en el árbol si es que es necesario.
+    </div>
+    <div class="Prioridad2">
     <h3>Propagación floja</h3>
     Crearemos un arreglo que tenga el mismo tamaño que _rbol y lo llamaremos Propagando. Este debe estar lleno de 
     elementos neutros de la operación de actualización o elementos que se sabe que no podrán ser posibles en
@@ -142,6 +151,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;_rbol[p] = _rbol[p * 2] + _rbol[p * 2 + 1];<br>
     }<br>
     </h4>
+    </div>
     La complejidad de creación del árbol de segmentos de un arreglo de tamaño n es O(n) y la complejidad por cada 
     consulta es O(log n). Ten en cuenta que el árbol de segmentos no se puede usar con algunas operaciones. La operación 
     de cada rango que guarda el árbol de segmentos debe ser asociativa y la operación de actualización debe ser 

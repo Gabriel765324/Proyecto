@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php include("Plantilla.php"); ?>
-    <div style="padding: 10px; margin-top: 10vh; width: 98vw; text-align: center;">
+    <div class="Prioridad1">
         <h1>PROBLEMAS DE ARREGLOS</h1>
         <table border="4">
             <?php

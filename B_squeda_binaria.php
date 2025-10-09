@@ -8,13 +8,14 @@
 </head>
 <body>
     <?php include("Plantilla.php"); ?>
-    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+    <div class="Prioridad1">
     <h1>BÚSQUEDA BINARIA</h1>
     La búsqueda binaria nos permite encontrar de manera eficiente el punto en donde cambia el valor de una 
     función binaria (que solo puede dar 2 valores y el valor que da la función solo cambia 1 vez).
     La podemos usar para buscar un elemento en un arreglo
     ordenado, encontrar la raíz con cualquier índice de cualquier número, optimizar la <a href="Mesa_dispersa.php">mesa dispersa</a>
     y muchas otras aplicaciones. <br>
+    <div class="Prioridad2">
     <h3>¿Cómo funciona?</h3>
     Funciona tieniendo 2 punteros y evaluando la función con su promedio, una vez evaluada debemos decidir qué 
     puntero mover hacia el promedio y continuamos el proceso hasta obtener el resultado deseado. Veamos un ejemplo para obtener
@@ -62,6 +63,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
     }
     </h4>
+    </div>
     La búsqueda binaria nos permite encontrar resultados de manera bastante veloz porque cada iteración descarta 
     la mitad de la información que queda, esto hace que su complejidad sea O(log n) en donde n es la diferencia 
     de los punteros al inicio en el caso de que estemos usando la búsqueda binaria para buscar respuestas en los 

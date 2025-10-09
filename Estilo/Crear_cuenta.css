@@ -9,7 +9,9 @@
     width: 24vw;
     border-style: solid;
     border-color: black;
-    border-radius: 22px;
+    border-radius: 22px 22px 22px 22px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px black;
 }
 .Texto_de_nombre_creado{
     margin-top: 26vh;
@@ -20,6 +22,7 @@
     border-style: solid;
     border-color: black;
     border-radius: 22px 22px 0px 0px;
+    box-shadow: 0px 10px 10px black;
 }
 .Texto_de_correo_creado{
     margin-top: 38vh;
@@ -30,6 +33,7 @@
     border-style: solid;
     border-color: black;
     border-radius: 22px 22px 0px 0px;
+    box-shadow: 0px 10px 10px black;
 }
 .Espacio_para_poner_el_correo_creado{
     margin-top: 41vh;
@@ -38,7 +42,9 @@
     width: 24vw;
     border-style: solid;
     border-color: black;
-    border-radius: 22px;
+    border-radius: 22px 22px 22px 22px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px black;
 }
 .Texto_de_contrase_a_creada{
     margin-top: 50vh;
@@ -49,6 +55,7 @@
     border-style: solid;
     border-color: black;
     border-radius: 22px 22px 0px 0px;
+    box-shadow: 0px 10px 10px black;
 }
 .Espacio_para_poner_la_contrase_a_creada{
     margin-top: 53vh;
@@ -57,7 +64,9 @@
     width: 24vw;
     border-style: solid;
     border-color: black;
-    border-radius: 22px;
+    border-radius: 22px 22px 22px 22px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px black;
 }
 .Texto_de_contrase_a_creada2{
     margin-top: 62vh;
@@ -68,6 +77,7 @@
     border-style: solid;
     border-color: black;
     border-radius: 22px 22px 0px 0px;
+    box-shadow: 0px 10px 10px black;
 }
 .Espacio_para_poner_la_contrase_a_creada2{
     margin-top: 65vh;
@@ -76,7 +86,9 @@
     width: 24vw;
     border-style: solid;
     border-color: black;
-    border-radius: 22px;
+    border-radius: 22px 22px 22px 22px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px black;
 }
 .Bot_n_para_crear_cuenta{
     margin-top: 72.5vh;
@@ -85,6 +97,11 @@
     width: 10vw;
     background-color: rgb(248, 178, 16);
     border-radius: 22px 22px 22px 22px;
+    border-style: groove;
+    border-color: aquamarine;
+    border-width: 3px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px black;
 }
 .Bot_n_para_crear_cuenta:hover{
     margin-top: 72.5vh;
@@ -93,16 +110,24 @@
     width: 10vw;
     background-color: rgb(255, 255, 0);
     border-radius: 22px 22px 22px 22px;
+    border-style: groove;
+    border-color: aquamarine;
+    border-width: 3px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px black;
 }
 .Recuadro{
     margin-top: 20vh;
     margin-left: 33vw;
     height: 70vh;
     width: 34vw;
-    background-color: rgba(0, 191, 255, 0.546);
-    border-style: solid;
+    background-color: rgba(0, 191, 255, 1);
+    border-style: double;
+    border-width: 10px;
+    box-sizing: border-box;
     border-color: black;
     border-radius: 22px;
+    box-shadow: 0px 10px 10px black;
 }
 .Preguntar_por_la_cuenta{
     font-family: 'Courier New', Courier, monospace;

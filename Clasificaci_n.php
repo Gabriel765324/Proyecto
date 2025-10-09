@@ -28,7 +28,7 @@
                 $Problemitas = $Tabla[1];
                 if(isset($_SESSION["ID"])){
                     if($Tabla[2] != $_SESSION["ID"]) echo "<tr style='background-color: rgb(83, 224, 174)'><td>$Puesto</td><td>$Nombrecillo</td><td>$Problemitas</td></tr>";
-                    else echo "<tr style='background-color: cyan'><td>$Puesto</td><td>$Nombrecillo</td><td>$Problemitas</td></tr>";
+                    else echo "<tr style='background-color: cyan'><td>$Puesto</td><td>$Nombrecillo (tú)</td><td>$Problemitas</td></tr>";
                 } else echo "<tr style='background-color: rgb(83, 224, 174)'><td>$Puesto</td><td>$Nombrecillo</td><td>$Problemitas</td></tr>";
             }
             ?>

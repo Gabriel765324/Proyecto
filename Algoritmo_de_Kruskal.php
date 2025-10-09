@@ -8,13 +8,16 @@
 </head>
 <body>
     <?php include("Plantilla.php"); ?>
-    <div style="padding: 10px; margin-top: 10vh; width: 98vw;">
+    <div class="Prioridad1">
     <h1>ALGORITMO DE KRUSKAL</h1>
     El algoritmo de Kruskal nos permite encontrar un árbol generador mínimo de un grafo conexo ponderado.
+    <div class="Prioridad2">
     <h3>¿Qué es un árbol generador mínimo?</h3>
     Son las aristas que se necesitan para unir todos los nodos de un grafo de manera que la suma 
     de sus pesos sea la menor posible. Tiene la propiedad de que el conjunto de pesos de las 
     aristas de cualquier árbol generador mínimo siempre es el mismo.
+    </div>
+    <div class="Prioridad2">
     <h3>¿Cómo funciona?</h3>
     Ordenaremos las aristas del grafo por pesos de menor a mayor e iremos por cada una de ellas.
     Con la <a href="Unir_conjuntos.php">unión de conjuntos disjuntos</a> veremos si los nodos que 
@@ -35,6 +38,7 @@
     }<br>
     cout&lt;&lt;"El peso del _rbol generador m_nimo es: "&lt;&lt;Peso_total;<br>
     </h4>
+    </div>
     La complejidad del algoritmo de Kruskal es O(n + e log e) en donde n es el número de nodos y e
     es el número de aristas.
     </div>
