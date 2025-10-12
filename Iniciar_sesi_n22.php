@@ -1,6 +1,7 @@
 <?php
     include("Conectar22.php");
-    if(!(session_status() === PHP_SESSION_ACTIVE)){
+    session_start();
+    if(!isset($_SESSION["ID"])){
         if(!isset($_POST["Correo"])){
             ?>
             <script>
@@ -17,8 +18,11 @@
         $Lista = $Consulta -> get_result();
         $Bien = 0;
         //$Filas = mysqli_num_rows($Conectar -> query($Consulta));
-        $Casos_de_prueba = range(0, 9);
-        shuffle($Casos_de_prueba);
+        $Casos_de_prueba = [random_int(0, 9), random_int(0, 8), random_int(0, 7)];
+        if($Casos_de_prueba[1] >= $Casos_de_prueba[0]) $Casos_de_prueba[1]++;
+        if($Casos_de_prueba[2] >= $Casos_de_prueba[1]) $Casos_de_prueba[2]++;
+        if($Casos_de_prueba[2] >= $Casos_de_prueba[1]) $Casos_de_prueba[2]++;
+        //shuffle($Casos_de_prueba);
         while(sizeof($Casos_de_prueba) > 3) array_pop($Casos_de_prueba);
         while($Datos = $Lista -> fetch_array()){
             $Encriptado = $Datos[3];
@@ -27,10 +31,7 @@
                 //echo "<script>alert('Falló la verificaión.')</script>";
                 break;
             }
-            $Casos_de_prueba = range(0, 9);
-            shuffle($Casos_de_prueba);
             while(sizeof($Casos_de_prueba) > 3) array_pop($Casos_de_prueba);
-            session_start();
             $_SESSION["ID"] = $Datos[0];
             $_SESSION["Nombre"] = $Datos[1];
             $_SESSION["Correo"] = $Datos[2];

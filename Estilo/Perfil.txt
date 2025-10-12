@@ -7,114 +7,202 @@
 .Caja1{
     width: 80vw;
     height: 13.9vh;
-    background-color: rgba(146, 248, 44, 0.546);
-    margin-top: 140px;
+    background-color: rgba(146, 248, 44, 1);
+    margin-top: 10.5vh;
     margin-left: 9.52vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
 }
 .Datos{
     width: 6vw;
     height: 3vh;
-    margin-top: 148px;
+    margin-top: 11.5vh;
     margin-left: 46.52vw;
     background-color: cyan;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 22px;
+    box-shadow: 0px 2px 2px black;
 }
 .Dato_nombre{
     width: 60vw;
     height: 3vh;
-    background-color: rgba(248, 207, 44, 0.546);
-    margin-top: 178px;
+    background-color: rgba(248, 207, 44, 1);
+    margin-top: 15.5vh;
     margin-left: 19.52vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
 }
 .Dato_correo{
     width: 60vw;
     height: 3vh;
-    background-color: rgba(248, 207, 44, 0.546);
-    margin-top: 208px;
+    background-color: rgba(248, 207, 44, 1);
+    margin-top: 19.9vh;
     margin-left: 19.52vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
 }
 .Caja2{
     width: 80vw;
-    height: 55vh;
-    background-color: rgba(146, 248, 44, 0.546);
-    margin-top: 255px;
+    height: 54vh;
+    background-color: rgba(146, 248, 44, 1);
+    margin-top: 26.1vh;
     margin-left: 9.52vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
 }
 .Modificar_datos{
     width: 12vw;
     height: 3vh;
-    margin-top: 263px;
+    margin-top: 27.2vh;
     margin-left: 43.52vw;
     background-color: cyan;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 22px;
+    box-shadow: 0px 2px 2px black;
 }
 .Nombre{
     width: 16vw;
     height: 3vh;
-    background-color: rgba(248, 207, 44, 0.546);
-    margin-top: 293px;
+    background-color: rgba(248, 207, 44, 1);
+    margin-top: 31.3vh;
     margin-left: 41.52vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
 }
 .Dar_nombre{
     width: 24vw;
     height: 3vh;
-    margin-top: 323px;
+    margin-top: 35.3vh;
     margin-left: 37.52vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
 }
 .Correo{
     width: 16vw;
     height: 3vh;
-    background-color: rgba(248, 207, 44, 0.546);
-    margin-top: 359px;
+    background-color: rgba(248, 207, 44, 1);
+    margin-top: 40.2vh;
     margin-left: 41.52vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
 }
 .Dar_correo{
     width: 24vw;
     height: 3vh;
-    margin-top: 389px;
+    margin-top: 44.3vh;
     margin-left: 37.52vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
 }
 .Contrase_a{
     width: 16vw;
     height: 3vh;
-    background-color: rgba(248, 207, 44, 0.546);
-    margin-top: 425px;
+    background-color: rgba(248, 207, 44, 1);
+    margin-top: 49.2vh;
     margin-left: 41.52vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
 }
 .Dar_contrase_a{
     width: 24vw;
     height: 3vh;
-    margin-top: 455px;
+    margin-top: 53.2vh;
     margin-left: 37.52vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
 }
 .Contrase_a2{
     width: 16vw;
     height: 3vh;
-    background-color: rgba(248, 207, 44, 0.546);
-    margin-top: 491px;
+    background-color: rgba(248, 207, 44, 1);
+    margin-top: 58.1vh;
     margin-left: 41.52vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
 }
 .Dar_contrase_a2{
     width: 24vw;
     height: 3vh;
-    margin-top: 521px;
+    margin-top: 62.2vh;
     margin-left: 37.52vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
 }
 .Antigua_contrase_a{
     width: 16vw;
     height: 3vh;
-    background-color: rgba(248, 207, 44, 0.546);
-    margin-top: 557px;
+    background-color: rgba(248, 207, 44, 1);
+    margin-top: 67.1vh;
     margin-left: 41.52vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
 }
 .Dar_antigua_contrase_a{
     width: 24vw;
     height: 3vh;
-    margin-top: 587px;
+    margin-top: 71.2vh;
     margin-left: 37.52vw;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
 }
 .Enviar{
     width: 16vw;
     height: 3vh;
-    margin-top: 623px;
+    margin-top: 76.1vh;
     margin-left: 41.52vw;
     background-color: cyan;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
+}
+.Enviar:hover{
+    width: 16vw;
+    height: 3vh;
+    margin-top: 76.1vh;
+    margin-left: 41.52vw;
+    background-color: rgb(0, 179, 255);
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
+}
+.Eliminar_cuenta{
+    width: 16vw;
+    height: 3vh;
+    background-color: rgb(255, 0, 0);
+    border-radius: 22px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 0px 3px 3px black;
+    margin-left: 41.52vw;
+    margin-top: 81vh;
+    box-sizing: border-box;
 }

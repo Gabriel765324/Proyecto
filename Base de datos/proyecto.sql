@@ -66,4 +66,4 @@ COMMIT;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
 CREATE USER 'Usuario_del_curso_de_programaci_n'@'localhost' IDENTIFIED BY '2222';
-GRANT SELECT, UPDATE, INSERT ON Proyecto.Usuarios TO 'Usuario_del_curso_de_programaci_n'@'localhost';
+GRANT SELECT, UPDATE, INSERT, DELETE ON Proyecto.Usuarios TO 'Usuario_del_curso_de_programaci_n'@'localhost';

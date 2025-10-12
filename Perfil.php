@@ -45,5 +45,12 @@
         <input type="password" name="Antigua_contrase_a" required class="Dar_antigua_contrase_a" maxlength="20" autocomplete="off">
         <input type="submit" value="Guardar cambios" class="Enviar">
     </form>
+    <div class="Caja3"></div>
+    <div class="Eliminar_cuenta">Borrar cuenta</div>
+    <form action="Borrar22.php" method="post">
+        <div class="Contrase_aB">Contraseña</div>
+        <input type="password" name="Contrase_a" required maxlength="20" autocomplete="off" class="Dar_contrase_aB">
+        <input type="submit" value="Borrar cuenta" class="Borrando">
+    </form>
 </body>
 </html>

@@ -3,14 +3,16 @@ using namespace std;
 int main(){
     vector<string> C_digo;
     vector< pair<string, int> > Reemplazos;
-    double vh = 0, px = 30;
+    double vh = -0.5, px = 0;
     string s;
     while(getline(cin, s)) C_digo.push_back(s);
     int Posici_n = 0;
     for(auto E: C_digo){
         int n = E.size();
-        for(int i = 0; i < n + 1; i++){
-            if(E[i] == 'p' and E[i + 1] == 'x'){
+        int h = 0;
+        for(int i = 0; i < n - 2; i++){
+            if(E[i] == 'h') h++;
+            /*if(E[i] == 'p' and E[i + 1] == 'x'){
                 for(int j = i - 1; j > -1; j--){
                     if(E[j] == ' '){
                         int cj = j;
@@ -37,8 +39,8 @@ int main(){
                     }
                 }
                 break;
-            }
-            if(E[i] == 'v' and E[i + 1] == 'h'){
+            }*/
+            if(E[i] == 'v' and E[i + 1] == 'h' and E[i + 2] == ';' and h == 0){
                 for(int j = i - 1; j > -1; j--){
                     if(E[j] == ' '){
                         int cj = j;
@@ -71,6 +73,7 @@ int main(){
     }
     for(auto E: Reemplazos){
         C_digo[E.second] = E.first;
+        cerr<<E.first<<" "<<E.second<<"\n";
     }
     for(auto E: C_digo){
         cout<<E<<"\n";

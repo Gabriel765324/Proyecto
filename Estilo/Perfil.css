@@ -8,7 +8,7 @@
     width: 80vw;
     height: 13.9vh;
     background-color: rgba(146, 248, 44, 1);
-    margin-top: 19vh;
+    margin-top: 10.5vh;
     margin-left: 9.52vw;
     border-style: solid;
     border-color: black;
@@ -17,7 +17,7 @@
 .Datos{
     width: 6vw;
     height: 3vh;
-    margin-top: 20vh;
+    margin-top: 11.5vh;
     margin-left: 46.52vw;
     background-color: cyan;
     border-style: solid;
@@ -29,7 +29,7 @@
     width: 60vw;
     height: 3vh;
     background-color: rgba(248, 207, 44, 1);
-    margin-top: 24vh;
+    margin-top: 15.5vh;
     margin-left: 19.52vw;
     border-style: solid;
     border-color: black;
@@ -40,7 +40,7 @@
     width: 60vw;
     height: 3vh;
     background-color: rgba(248, 207, 44, 1);
-    margin-top: 28.4vh;
+    margin-top: 19.9vh;
     margin-left: 19.52vw;
     border-style: solid;
     border-color: black;
@@ -49,9 +49,9 @@
 }
 .Caja2{
     width: 80vw;
-    height: 55vh;
+    height: 54vh;
     background-color: rgba(146, 248, 44, 1);
-    margin-top: 34.6vh;
+    margin-top: 26.1vh;
     margin-left: 9.52vw;
     border-style: solid;
     border-color: black;
@@ -60,7 +60,7 @@
 .Modificar_datos{
     width: 12vw;
     height: 3vh;
-    margin-top: 35.7vh;
+    margin-top: 27.2vh;
     margin-left: 43.52vw;
     background-color: cyan;
     border-style: solid;
@@ -72,7 +72,7 @@
     width: 16vw;
     height: 3vh;
     background-color: rgba(248, 207, 44, 1);
-    margin-top: 39.8vh;
+    margin-top: 31.3vh;
     margin-left: 41.52vw;
     border-style: solid;
     border-color: black;
@@ -82,7 +82,7 @@
 .Dar_nombre{
     width: 24vw;
     height: 3vh;
-    margin-top: 43.8vh;
+    margin-top: 35.3vh;
     margin-left: 37.52vw;
     border-style: solid;
     border-color: black;
@@ -93,7 +93,7 @@
     width: 16vw;
     height: 3vh;
     background-color: rgba(248, 207, 44, 1);
-    margin-top: 48.7vh;
+    margin-top: 40.2vh;
     margin-left: 41.52vw;
     border-style: solid;
     border-color: black;
@@ -103,7 +103,7 @@
 .Dar_correo{
     width: 24vw;
     height: 3vh;
-    margin-top: 52.8vh;
+    margin-top: 44.3vh;
     margin-left: 37.52vw;
     border-style: solid;
     border-color: black;
@@ -114,7 +114,7 @@
     width: 16vw;
     height: 3vh;
     background-color: rgba(248, 207, 44, 1);
-    margin-top: 57.7vh;
+    margin-top: 49.2vh;
     margin-left: 41.52vw;
     border-style: solid;
     border-color: black;
@@ -124,7 +124,7 @@
 .Dar_contrase_a{
     width: 24vw;
     height: 3vh;
-    margin-top: 61.7vh;
+    margin-top: 53.2vh;
     margin-left: 37.52vw;
     border-style: solid;
     border-color: black;
@@ -135,7 +135,7 @@
     width: 16vw;
     height: 3vh;
     background-color: rgba(248, 207, 44, 1);
-    margin-top: 66.6vh;
+    margin-top: 58.1vh;
     margin-left: 41.52vw;
     border-style: solid;
     border-color: black;
@@ -145,7 +145,7 @@
 .Dar_contrase_a2{
     width: 24vw;
     height: 3vh;
-    margin-top: 70.7vh;
+    margin-top: 62.2vh;
     margin-left: 37.52vw;
     border-style: solid;
     border-color: black;
@@ -156,7 +156,7 @@
     width: 16vw;
     height: 3vh;
     background-color: rgba(248, 207, 44, 1);
-    margin-top: 75.6vh;
+    margin-top: 67.1vh;
     margin-left: 41.52vw;
     border-style: solid;
     border-color: black;
@@ -166,7 +166,7 @@
 .Dar_antigua_contrase_a{
     width: 24vw;
     height: 3vh;
-    margin-top: 79.7vh;
+    margin-top: 71.2vh;
     margin-left: 37.52vw;
     border-color: black;
     border-radius: 22px;
@@ -175,19 +175,87 @@
 .Enviar{
     width: 16vw;
     height: 3vh;
-    margin-top: 84.6vh;
+    margin-top: 76.1vh;
     margin-left: 41.52vw;
     background-color: cyan;
-    border-radius: 22px 22px 22px 22px;
     border-style: solid;
     border-color: black;
     border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
 }
 .Enviar:hover{
     width: 16vw;
     height: 3vh;
-    margin-top: 84.6vh;
+    margin-top: 76.1vh;
     margin-left: 41.52vw;
     background-color: rgb(0, 179, 255);
-    border-radius: 22px 22px 22px 22px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
+}
+.Caja3{
+    width: 80vw;
+    height: 17vh;
+    background-color: rgba(146, 248, 44, 1);
+    margin-top: 82vh;
+    margin-left: 9.52vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+}
+.Eliminar_cuenta{
+    width: 16vw;
+    height: 3vh;
+    background-color: rgb(255, 0, 0);
+    border-radius: 22px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 0px 3px 3px black;
+    margin-left: 41.52vw;
+    margin-top: 83vh;
+    box-sizing: border-box;
+}
+.Contrase_aB{
+    width: 16vw;
+    height: 3vh;
+    background-color: rgba(248, 207, 44, 1);
+    margin-top: 87vh;
+    margin-left: 41.52vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
+    box-sizing: border-box;
+}
+.Dar_contrase_aB{
+    width: 24vw;
+    height: 3vh;
+    margin-top: 91vh;
+    margin-left: 37.52vw;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
+}
+.Borrando{
+    width: 16vw;
+    height: 3vh;
+    margin-top: 95.5vh;
+    margin-left: 41.52vw;
+    background-color: rgb(255, 0, 0);
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
+}
+.Borrando:hover{
+    width: 16vw;
+    height: 3vh;
+    margin-top: 95.5vh;
+    margin-left: 41.52vw;
+    background-color: rgb(175, 0, 0);
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px;
+    box-shadow: 0px 3px 3px black;
 }
