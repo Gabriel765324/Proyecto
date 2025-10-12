@@ -21,7 +21,15 @@
     <h3>Ejemplo de entrada</h3>
     2 <br>
     1 2 <br>
+    3 4<h3>Ejemplo de entrada</h3>
+    2 <br>
+    1 2 <br>
     3 4
+    <h3>Ejemplo de salida</h3>
+    6
+    <h3>Explicación</h3>
+    Empiezas en la casilla con costo 2, te debes mover a la casilla con costo 1 y finalmente a la casilla 
+    con costo 3. El costo total del recorrido es 2 + 1 + 3 = 6.
     <br>
     <?php
         if(!isset($_SESSION["Temporizador"]) and isset($_SESSION["ID"])){

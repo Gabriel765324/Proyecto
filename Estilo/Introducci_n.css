@@ -164,6 +164,7 @@ td{
     display: none;
 }
 .Prioridad1{
+    overflow-x: hidden;
     width: 98vw;
     margin-left: 0.5vw;
     box-sizing: border-box;
