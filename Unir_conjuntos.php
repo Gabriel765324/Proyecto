@@ -74,4 +74,4 @@
     Ackermann y crece de manera extremadamente lenta (no debería ser mayor que 4).
     </div>
 </body>
-</html>
+</html> <?php //6283 ?>
