@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php include("Plantilla.php"); ?>
+    <?php 
+        setcookie("P_gina", 1, time() + 2222222);
+        include("Plantilla.php");
+    ?>
     <div class="Prioridad1">
     <h1>ÁRBOL DE SEGMENTOS</h1>
     El árbol de segmentos es una estructura de datos que permite responer a consultas en rangos de un arreglo. <br>

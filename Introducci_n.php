@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php include("Plantilla.php");
+    <?php setcookie("P_gina", 1, time() + 2222222); include("Plantilla.php");
     /*<div style="padding: 10px; margin-top: 10vh; width: 98vw;">*/
     ?>
     <div class="Prioridad1">

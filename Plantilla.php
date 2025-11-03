@@ -11,21 +11,35 @@
     <div class="Fondo"></div>
     <div class="Barra_superior"></div>
     <center>
-        <a href="index.php"><button class="Inicio">Inicio</button></a>
-        <a href="Cursos.php"><button class="Cursos">Cursos</button></a>
-        <a href="Problemas.php"><button class="Problemas">Problemas</button></a>
+        <?php
+            $Cero = "Inicio";
+            $Uno = "Cursos";
+            $Dos = "Perfil";
+            $Tres = "Problemas";
+            $Cuatro = "Cuentas";
+            if(isset($_COOKIE["P_gina"])){
+                if($_COOKIE["P_gina"] == 0) $Cero = "Inicio1";
+                if($_COOKIE["P_gina"] == 1) $Uno = "Cursos1";
+                if($_COOKIE["P_gina"] == 2) $Dos = "Perfil1";
+                if($_COOKIE["P_gina"] == 3) $Tres = "Problemas1";
+                if($_COOKIE["P_gina"] == 4) $Cuatro = "Cuentas1";
+            }
+        ?>
+        <a href="index.php"><button class="<?php echo $Cero; ?>">Inicio</button></a>
+        <a href="Cursos.php"><button class="<?php echo $Uno; ?>">Cursos</button></a>
+        <a href="Problemas.php"><button class="<?php echo $Tres; ?>">Problemas</button></a>
         <?php
             session_start();
             if(!isset($_SESSION["ID"])){
-                echo "<a href='Cuentas.php'><button class='Cuentas'>Iniciar sesión<br>Registrarse</button></a>";
+                echo "<a href='Cuentas.php'><button class='$Cuatro'>Iniciar sesión<br>Registrarse</button></a>";
             } else {
                 if(time() - $_SESSION["Tiempo"] >= 10800){
                     session_unset();
                     session_destroy();
-                    echo "<a href='Cuentas.php'><button class='Cuentas'>Iniciar sesión<br>Registrarse</button></a>";
+                    echo "<a href='Cuentas.php'><button class='$Cuatro'>Iniciar sesión<br>Registrarse</button></a>";
                 } else {
-                    echo "<a href='Cerrar_sesi_n22.php'><button class='Cuentas'>Cerrar sesión</button></a>";
-                    echo "<a href='Perfil.php'><button class='Perfil'>Perfil</button></a>";
+                    echo "<a href='Cerrar_sesi_n22.php'><button class='$Cuatro'>Cerrar sesión</button></a>";
+                    echo "<a href='Perfil.php'><button class='$Dos'>Perfil</button></a>";
                     $_SESSION["Tiempo"] = time();
                 }
             }

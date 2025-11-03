@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php include("Plantilla.php"); $Nombre_del_problema = "Ordenar.php"; /*Nombre.php*/
+    <?php setcookie("P_gina", 3, time() + 2222222); include("Plantilla.php"); $Nombre_del_problema = "Ordenar.php"; /*Nombre.php*/
     $Otrito = "Ordenar"; /*Nombre*/ $Yo = 3; /*ID del problema*/ ?>
     <div class="Prioridad1">
     <h1>ORDENAR</h1>

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php include("Plantilla.php"); $Nombre_del_problema = "Suma_mayor.php"; /*Nombre.php*/
+    <?php setcookie("P_gina", 3, time() + 2222222); include("Plantilla.php"); $Nombre_del_problema = "Suma_mayor.php"; /*Nombre.php*/
     $Otrito = "Suma_mayor"; /*Nombre de la carpeta*/ $Yo = 5; /*ID del problema*/ ?>
     <div class="Prioridad1">
     <h1>SUMA MÁXIMA EN CADA PREFIJO</h1>

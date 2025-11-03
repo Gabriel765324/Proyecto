@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php include("Plantilla.php"); ?>
+    <?php setcookie("P_gina", 1, time() + 2222222); include("Plantilla.php"); ?>
     <div class="Prioridad1">
     <h1>MESA DISPERSA</h1>
     La mesa dispersa es una estructura de datos que nos permite hacer consultas 

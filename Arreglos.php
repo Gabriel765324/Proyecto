@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="Estilo/Arreglos.css">
 </head>
 <body>
-    <?php include("Plantilla.php"); ?>
+    <?php
+        setcookie("P_gina", 1, time() + 2222222); 
+        include("Plantilla.php");
+    ?>
     <a href="Concepto.php"><button class="Concepto">Concepto</button></a>
     <a href="Suma_de_prefijos.php"><button class="Suma">Suma de prefijos</button></a>
     <a href="Algoritmo_de_Kadane.php"><button class="Kadane">Algoritmo de Kadane</button></a>

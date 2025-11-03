@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php include("Plantilla.php"); $Nombre_del_problema = "Di_metro.php"; /*Nombre.php*/
+    <?php setcookie("P_gina", 3, time() + 2222222); include("Plantilla.php"); $Nombre_del_problema = "Di_metro.php"; /*Nombre.php*/
     $Otrito = "Di_metro"; /*Nombre de la carpeta*/ $Yo = 12; /*ID del problema*/ ?>
     <div class="Prioridad1">
     <h1>DIÁMETRO (árbol)</h1>

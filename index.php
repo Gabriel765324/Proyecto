@@ -8,6 +8,7 @@
 </head>
 <body>
     <?php 
+        setcookie("P_gina", 0, time() + 2222222);
         include("Plantilla.php");
         if(isset($_SESSION["ID"])){
             $Nombrecillo = $_SESSION["Nombre"];

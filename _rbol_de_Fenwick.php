@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php include("Plantilla.php"); ?>
+    <?php 
+        setcookie("P_gina", 1, time() + 2222222);
+        include("Plantilla.php");
+    ?>
     <div class="Prioridad1">
     <h1>ÁRBOL DE FENWICK</h1>
     Como vimos antes, sacar la suma de un subarreglo eficientemente es fácil con una suma de prefijos, ¿pero qué

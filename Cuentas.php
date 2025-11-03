@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="Estilo/Cuentas.css">
 </head>
 <body>
-    <?php include("Plantilla.php"); ?>
+    <?php
+        setcookie("P_gina", 4, time() + 2222222);
+        include("Plantilla.php");
+    ?>
     <div class="Recuadro"></div>
     <div class="Preguntar_por_la_cuenta">¿No tiene una cuenta?</div>
     <a href="Crear_cuenta.php" class="Enlace_para_el_registro">Regístrese</a>

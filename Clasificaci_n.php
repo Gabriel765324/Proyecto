@@ -8,10 +8,11 @@
 </head>
 <body>
     <?php
-    include("Plantilla.php");
-    $Puestos = $Conectar -> query("SELECT Nombre, Problemas_resueltos, ID FROM Usuarios ORDER BY Problemas_resueltos DESC");
-    $Puesto = 1;
-    $Estamos = 1;
+        setcookie("P_gina", 3, time() + 2222222);
+        include("Plantilla.php");
+        $Puestos = $Conectar -> query("SELECT Nombre, Problemas_resueltos, ID FROM Usuarios ORDER BY Problemas_resueltos DESC");
+        $Puesto = 1;
+        $Estamos = 1;
     ?>
     <div style="padding: 10px; margin-top: 10vh; width: 98vw; text-align: center;">
         <table border="2">

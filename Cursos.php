@@ -8,6 +8,7 @@
 </head>
 <body>
     <?php
+        setcookie("P_gina", 1, time() + 2222222);
         include("Plantilla.php");
         include("Conectar22.php");
     ?>

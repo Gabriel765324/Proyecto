@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="Estilo/Crear_cuenta.css">
 </head>
 <body>
-    <?php include("Plantilla.php"); ?>
+    <?php
+        setcookie("P_gina", 4, time() + 2222222); 
+        include("Plantilla.php");
+    ?>
     <div class="Recuadro"></div>
     <form action="Registro22.php" method="post">
         <div class="Texto_de_nombre_creado">Ingrese su nombre de usuario</div>

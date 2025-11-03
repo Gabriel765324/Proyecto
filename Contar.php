@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php include("Plantilla.php"); $Nombre_del_problema = "Contar.php"; /*Nombre.php*/ $Otrito = "Contar"; /*Nombre*/ $Yo = 1; /*ID del problema*/ ?>
+    <?php
+        setcookie("P_gina", 3, time() + 2222222);
+        include("Plantilla.php"); $Nombre_del_problema = "Contar.php"; /*Nombre.php*/ $Otrito = "Contar"; /*Nombre*/ $Yo = 1; /*ID del problema*/
+    ?>
     <div class="Prioridad1">
     <h1>Contar</h1>
     Se te dará un número entero n y un número entero k, a continuación se te dará un arreglo a de n números enteros. Imprime 

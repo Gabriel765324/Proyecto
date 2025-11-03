@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php include("Plantilla.php"); $Nombre_del_problema = "_rbol_generador_m_ximo.php"; /*Nombre.php*/
-    $Otrito = "_rbol_generador_m_ximo"; /*Nombre de la carpeta*/ $Yo = 10; /*ID del problema*/ ?>
+    <?php
+        setcookie("P_gina", 3, time() + 2222222);
+        include("Plantilla.php"); $Nombre_del_problema = "_rbol_generador_m_ximo.php"; /*Nombre.php*/
+        $Otrito = "_rbol_generador_m_ximo"; /*Nombre de la carpeta*/ $Yo = 10; /*ID del problema*/ 
+    ?>
     <div class="Prioridad1">
     <h1>ÁRBOL GENERADOR MÁXIMO</h1>
     Se te dará un grafo ponderado no dirigido conexo y tu tarea será determinar la suma de pesos

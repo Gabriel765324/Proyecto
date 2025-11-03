@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php include("Plantilla.php"); ?>
+    <?php setcookie("P_gina", 1, time() + 2222222); include("Plantilla.php"); ?>
     <div class="Prioridad1">
     <center><h1 class="Ttulo">SUMA DE PREFIJOS</h1></center>
     La suma de prefijos es una estructura de datos que nos permite encontrar la suma de cada 

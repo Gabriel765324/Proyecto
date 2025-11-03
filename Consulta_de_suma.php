@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php include("Plantilla.php"); $Nombre_del_problema = "Consulta_de_suma.php"; /*Nombre.php*/
-    $Otrito = "Consulta_de_suma"; /*Nombre de la carpeta*/ $Yo = 9; /*ID del problema*/ ?>
+    <?php
+        setcookie("P_gina", 3, time() + 2222222);
+        include("Plantilla.php"); $Nombre_del_problema = "Consulta_de_suma.php"; /*Nombre.php*/
+        $Otrito = "Consulta_de_suma"; /*Nombre de la carpeta*/ $Yo = 9; /*ID del problema*/
+    ?>
     <div class="Prioridad1">
     <h1>CONSULTA DE SUMA Y ACTUALIZACIÓN</h1>
     Se te dará un número entero n y un arreglo a con n números enteros, luego se te dará un número entero q y 

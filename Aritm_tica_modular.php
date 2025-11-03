@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php include("Plantilla.php"); ?>
+    <?php
+        setcookie("P_gina", 1, time() + 2222222);
+        include("Plantilla.php");
+    ?>
     <div class="Prioridad1">
     <h1>ARITMÉTICA MODULAR</h1>
     En algunos problemas se te pide que des el residuo del resultado dividido entre un número que usualmente 

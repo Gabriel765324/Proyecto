@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php include("Plantilla.php"); ?>
+    <?php
+        setcookie("P_gina", 1, time() + 2222222);
+        include("Plantilla.php");
+    ?>
     <div class="Prioridad1">
     <h1>ARREGLOS</h1>
     Los arreglos son listas de elementos en donde el orden sí importa a diferencia de los conjuntos. <br>

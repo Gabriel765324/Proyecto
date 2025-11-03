@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php include("Plantilla.php"); $Nombre_del_problema = "Componentes_conexos.php"; /*Nombre.php*/
-    $Otrito = "Componentes_conexos"; /*Nombre de la carpeta*/ $Yo = 11; /*ID del problema*/ ?>
+    <?php
+        setcookie("P_gina", 3, time() + 2222222);
+        include("Plantilla.php"); $Nombre_del_problema = "Componentes_conexos.php"; /*Nombre.php*/
+        $Otrito = "Componentes_conexos"; /*Nombre de la carpeta*/ $Yo = 11; /*ID del problema*/
+    ?>
     <div class="Prioridad1">
     <h1>COMPONENTES CONEXOS</h1>
     Se te dará una grilla con n filas y n columnas, luego se te darán n filas con n números cada una en 

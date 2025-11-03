@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php include("Plantilla.php"); ?>
+    <?php
+        setcookie("P_gina", 1, time() + 2222222);
+        include("Plantilla.php");
+    ?>
     <div class="Prioridad1">
     <h1>BÚSQUEDA EN PROFUNDIDAD Y BÚSQUEDA EN ANCHURA</h1>
     Estos 2 algoritmos nos permiten recorrer grafos de diferentes maneras.
