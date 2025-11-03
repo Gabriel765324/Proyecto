@@ -8,7 +8,9 @@
 </head>
 <body>
     <?php
-        setcookie("P_gina", 1, time() + 2222222);
+        session_start();
+        $_SESSION["P_gina"] = 1;
+        session_write_close();
         include("Plantilla.php");
         include("Conectar22.php");
     ?>

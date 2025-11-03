@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php setcookie("P_gina", 3, time() + 2222222); include("Plantilla.php"); ?>
+    <?php session_start();
+        $_SESSION["P_gina"] = 3;
+        session_write_close(); include("Plantilla.php"); ?>
     <div class="Prioridad1">
         <h1>PROBLEMAS INTRODUCTORIOS</h1>
         <table border="4">

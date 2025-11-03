@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php setcookie("P_gina", 1, time() + 2222222); include("Plantilla.php"); ?>
+    <?php session_start();
+        $_SESSION["P_gina"] = 1;
+        session_write_close(); include("Plantilla.php"); ?>
     <div class="Prioridad1">
     <h1>UNIÓN DE CONJUNTOS DISJUNTOS</h1>
     Esta es un estructura de datos que nos permite saber de manera eficiente el componente conexo en el 

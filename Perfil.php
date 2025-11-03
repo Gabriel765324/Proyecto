@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="Estilo/Perfil.css">
 </head>
 <body>
-    <?php  setcookie("P_gina", 2, time() + 2222222);
+    <?php
+        session_start();
+        $_SESSION["P_gina"] = 2;
+        session_write_close();
         include("Plantilla.php");
         if(!isset($_SESSION["ID"])){
             ?>

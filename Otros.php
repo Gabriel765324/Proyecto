@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="Estilo/Arreglos.css">
 </head>
 <body>
-    <?php setcookie("P_gina", 3, time() + 2222222); include("Plantilla.php"); ?>
+    <?php session_start();
+        $_SESSION["P_gina"] = 3;
+        session_write_close(); include("Plantilla.php"); ?>
     <a href="B_squeda_binaria.php"><button class="B_squeda_binaria">Búsqueda binaria</button></a>
     <a href="Programaci_n_din_mica.php"><button class="Programaci_n_din_mica">Programación dinámica</button></a>
     <a href="Prueba_de_primalidad.php"><button class="Prueba_de_primalidad">Prueba de primalidad</button></a>

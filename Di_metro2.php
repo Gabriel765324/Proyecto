@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php setcookie("P_gina", 3, time() + 2222222); include("Plantilla.php"); $Nombre_del_problema = "Di_metro2.php"; /*Nombre.php*/
+    <?php session_start();
+        $_SESSION["P_gina"] = 3;
+        session_write_close(); include("Plantilla.php"); $Nombre_del_problema = "Di_metro2.php"; /*Nombre.php*/
     $Otrito = "Di_metro2"; /*Nombre de la carpeta*/ $Yo = 13; /*ID del problema*/ ?>
     <div class="Prioridad1">
     <h1>DIÁMETRO (grafo)</h1>

@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php setcookie("P_gina", 1, time() + 2222222); include("Plantilla.php"); ?>
+    <?php session_start();
+        $_SESSION["P_gina"] = 1;
+        session_write_close(); include("Plantilla.php"); ?>
     <div class="Prioridad1">
     <h1>PROGRAMACIÓN DINÁMICA</h1>
     La programación dinámica es una técnica que podemos usar para encontrar soluciones a problemas eligiendo 

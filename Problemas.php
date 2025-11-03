@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="Estilo/Problemas.css">
 </head>
 <body>
-    <?php setcookie("P_gina", 3, time() + 2222222); include("Plantilla.php"); ?>
+    <?php session_start();
+        $_SESSION["P_gina"] = 3;
+        session_write_close(); include("Plantilla.php"); ?>
     <div class="Tabla">
         <div class="Fila">
             <a href="Problemas_de_introducci_n.php"><div class="Celda1">Problemas introductorios</div></a>

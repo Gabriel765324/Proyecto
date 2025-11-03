@@ -8,7 +8,9 @@
 </head>
 <body>
     <?php
-        setcookie("P_gina", 4, time() + 2222222); 
+        session_start();
+        $_SESSION["P_gina"] = 4;
+        session_write_close();
         include("Plantilla.php");
     ?>
     <div class="Recuadro"></div>

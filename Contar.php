@@ -8,7 +8,9 @@
 </head>
 <body>
     <?php
-        setcookie("P_gina", 3, time() + 2222222);
+        session_start();
+        $_SESSION["P_gina"] = 3;
+        session_write_close();
         include("Plantilla.php"); $Nombre_del_problema = "Contar.php"; /*Nombre.php*/ $Otrito = "Contar"; /*Nombre*/ $Yo = 1; /*ID del problema*/
     ?>
     <div class="Prioridad1">

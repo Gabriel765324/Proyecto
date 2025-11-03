@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php setcookie("P_gina", 3, time() + 2222222); include("Plantilla.php"); $Nombre_del_problema = "A_B.php"; $Otrito = "A_B"; $Yo = 0; ?>
+    <?php session_start();
+        $_SESSION["P_gina"] = 3;
+        session_write_close(); include("Plantilla.php"); $Nombre_del_problema = "A_B.php"; $Otrito = "A_B"; $Yo = 0; ?>
     <div class="Prioridad1">
     <h1>A + B</h1>
     Se le dará a tu código un número entero a y un número entero b, debes imprimir la suma de esos 2 números.

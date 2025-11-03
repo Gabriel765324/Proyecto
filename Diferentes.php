@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="Estilo/Introducci_n.css">
 </head>
 <body>
-    <?php setcookie("P_gina", 3, time() + 2222222); include("Plantilla.php"); $Nombre_del_problema = "Diferentes.php"; /*Nombre.php*/ $Otrito = "Diferentes"; /*Nombre*/ $Yo = 2; /*ID del problema*/ ?>
+    <?php session_start();
+        $_SESSION["P_gina"] = 3;
+        session_write_close(); include("Plantilla.php"); $Nombre_del_problema = "Diferentes.php"; /*Nombre.php*/ $Otrito = "Diferentes"; /*Nombre*/ $Yo = 2; /*ID del problema*/ ?>
     <div class="Prioridad1">
     <h1>DIFERENTES</h1>
-    Se te dará un número entero n y un arreglo a con n números enteros imprime la cantidad de números
+    Se te dará un número entero n y un arreglo a con n números enteros, debes imprimir la cantidad de números
     diferentes de a. 
     <h3>Límites</h3>
     1 &le; n &le; 1000000 <br>

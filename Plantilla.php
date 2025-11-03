@@ -12,18 +12,20 @@
     <div class="Barra_superior"></div>
     <center>
         <?php
+            session_start();
             $Cero = "Inicio";
             $Uno = "Cursos";
             $Dos = "Perfil";
             $Tres = "Problemas";
             $Cuatro = "Cuentas";
-            if(isset($_COOKIE["P_gina"])){
-                if($_COOKIE["P_gina"] == 0) $Cero = "Inicio1";
-                if($_COOKIE["P_gina"] == 1) $Uno = "Cursos1";
-                if($_COOKIE["P_gina"] == 2) $Dos = "Perfil1";
-                if($_COOKIE["P_gina"] == 3) $Tres = "Problemas1";
-                if($_COOKIE["P_gina"] == 4) $Cuatro = "Cuentas1";
+            if(isset($_SESSION["P_gina"])){
+                if($_SESSION["P_gina"] == 0) $Cero = "Inicio1";
+                if($_SESSION["P_gina"] == 1) $Uno = "Cursos1";
+                if($_SESSION["P_gina"] == 2) $Dos = "Perfil1";
+                if($_SESSION["P_gina"] == 3) $Tres = "Problemas1";
+                if($_SESSION["P_gina"] == 4) $Cuatro = "Cuentas1";
             }
+            session_write_close();
         ?>
         <a href="index.php"><button class="<?php echo $Cero; ?>">Inicio</button></a>
         <a href="Cursos.php"><button class="<?php echo $Uno; ?>">Cursos</button></a>

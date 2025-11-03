@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="Estilo/Arreglos.css">
 </head>
 <body>
-    <?php setcookie("P_gina", 1, time() + 2222222); include("Plantilla.php"); ?>
+    <?php session_start();
+        $_SESSION["P_gina"] = 1;
+        session_write_close(); include("Plantilla.php"); ?>
     <a href="Conceptos_de_grafos.php"><button class="Concepto">Concepto</button></a>
     <a href="B_squedas.php"><button class="Suma">Búsqueda en profundidad y búsqueda en anchura</button></a>
     <a href="Algoritmo_de_Dijkstra.php"><button class="Kadane">Algoritmo de Dijkstra</button></a>

@@ -8,7 +8,9 @@
 </head>
 <body>
     <?php
-        setcookie("P_gina", 3, time() + 2222222);
+        session_start();
+        $_SESSION["P_gina"] = 3;
+        session_write_close();
         include("Plantilla.php"); $Nombre_del_problema = "Consulta_de_suma.php"; /*Nombre.php*/
         $Otrito = "Consulta_de_suma"; /*Nombre de la carpeta*/ $Yo = 9; /*ID del problema*/
     ?>
