@@ -31,7 +31,9 @@
             echo "<tr><td style='text-align: center; background-color: $Color;'><a href='Consulta_de_suma.php'>Consulta de suma y actualización</a></td></tr>";
             ?>
         </table> <br>
-        Se recomienda usar <a href="Introducci_n.php#8">freopen</a> para recibir las entradas de 
+        En los problemas se te darán 3 casos de prueba que debes descargar. Una vez hecho eso, 
+        tienes que crear un código que pueda resolver el problema planteado para cada caso. 
+        Se recomienda usar <a href="Introducci_n.php#8">freopen</a> para leer las entradas de 
         los casos de prueba.
     </div>
 </body>
